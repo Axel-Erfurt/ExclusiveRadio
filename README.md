@@ -1,5 +1,5 @@
 # ExclusiveRadio
-[ExclusiveRadio](https://exclusive.radio/) Tray App for Mint/Ubuntu
+[ExclusiveRadio](https://exclusive.radio/) Tray App for Mint/Ubuntu (tested in Mint 20 / Ubuntu 20.04)
 
 [ExclusiveRadio](https://exclusive.radio/) is a Web Radio with 470 Channels
 
@@ -18,6 +18,8 @@
 
 use Mouse Wheel on the Tray Icon to change the Player Volume.
 
-[64bit App Download](https://www.dropbox.com/s/pcyi70cntj34b7i/ExclusiveRadio64.tar.gz?dl=1)
+###### App Download ######
+
+[64bit Download](https://www.dropbox.com/s/pcyi70cntj34b7i/ExclusiveRadio64.tar.gz?dl=1)
  
  extract it and start ExclusiveRadio
