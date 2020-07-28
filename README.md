@@ -1,6 +1,8 @@
 # ExclusiveRadio
 [ExclusiveRadio](https://exclusive.radio/) Tray App for Mint/Ubuntu
 
+[ExclusiveRadio](https://exclusive.radio/) is a Web Radio with 470 Channels
+
 ![alt text](https://github.com/Axel-Erfurt/ExclusiveRadio/blob/master/er_screenshot.png)
 
 ###### Requirements ######
