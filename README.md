@@ -1,5 +1,5 @@
 # ExclusiveRadio
-[ExclusiveRadio](https://exclusive.radio/) Tray App for Mint/Ubuntu (tested in Mint 20 / Ubuntu 20.04)
+[ExclusiveRadio](https://exclusive.radio/) Tray App for Mint/Ubuntu (tested in Mint 20 / Kubuntu 20.04)
 
 [ExclusiveRadio](https://exclusive.radio/) is a Web Radio with 470 Channels
 
