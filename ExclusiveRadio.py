@@ -7,6 +7,7 @@ gi.require_version('Gdk', '3.0')
 gi.require_version('Notify', '0.7')
 gi.require_version('AppIndicator3', '0.1')
 from gi.repository import Gtk, Gdk, Gst, Notify, AppIndicator3 as tray
+import warnings
 
 from gi.repository import GLib
 from configparser import ConfigParser
@@ -17,6 +18,8 @@ Gst.init(None)
 Gst.init_check(None)
 
 import exclusiveList2
+
+warnings.filterwarnings("ignore")
 
 
 class RadioPlayer(Gtk.Window):
@@ -79,17 +82,19 @@ class RadioPlayer(Gtk.Window):
             self.old_tag = my_tag
         
     def showNotification(self, message, *args):
-        Notify.Notification.new("Exclusive Radio", message, self.my_icon).show()
+        n = Notify.Notification.new("Exclusive Radio", message, self.my_icon)
+        n.set_timeout(5000)
+        n.show()
     
     def scroll_notify_event(self, ind, steps, e):
-        vol = self.player.get_property('volume')
+        vol = self.amplify.get_property('amplification')
         if e == Gdk.ScrollDirection.UP:
             if vol < 1.0:
-                self.player.set_property('volume', vol + 0.05)
+                self.amplify.set_property('amplification', vol + 0.05)
         elif e == Gdk.ScrollDirection.DOWN:
             if vol > 0.0:
-                self.player.set_property('volume', vol - 0.05)
-        new_vol = format(self.player.get_property("volume"), '.2f') 
+                self.amplify.set_property('amplification', vol - 0.05)
+        new_vol = format(self.amplify.get_property("amplification"), '.2f') 
         print(f'Volume changed to {str(new_vol)}')
         self.volume = new_vol
 
@@ -133,8 +138,11 @@ class RadioPlayer(Gtk.Window):
                     ch = b[x].partition(",")[2]
                     self.ch_names.append(name)
                     self.ch_urls.append(ch)
-                    action_channel = Gtk.MenuItem.new_with_label(name)
+                    action_channel = Gtk.ImageMenuItem.new_with_label(name)
+                    img = Gtk.Image()
+                    img.set_from_file(self.my_menu_icon)
                     self.submenu1.append(action_channel)
+                    action_channel.set_image(img)
                     action_channel.connect("activate", self.item_activated, i)
                     self.sub1.set_submenu(self.submenu1)
                     i += 1
@@ -181,7 +189,7 @@ class RadioPlayer(Gtk.Window):
             self.volume = float(parser.get('Preferences', 'radio_volume'))
             self.url = parser.get('Preferences', 'last_channel')
             print(f'Volume set to {self.volume}\nplaying last Channel {self.url}')
-            self.player.set_property('volume', self.volume)
+            self.amplify.set_property('amplification', self.volume)
             if not self.url == '':
                 self.playStation(self.url)
 
