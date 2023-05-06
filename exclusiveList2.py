@@ -1,636 +1,692 @@
-ex_list="""-- Exclusive Radio Soft Rock --
-Soft Rock,http://streaming.exclusive.radio/er/softrock/icecast.audio
-Alanis Morissette,http://streaming.exclusive.radio/er/alanismorissette/icecast.audio
-America,http://streaming.exclusive.radio/er/america/icecast.audio
-Billy Idol,http://streaming.exclusive.radio/er/billyidol/icecast.audio
-Bob Seger,http://streaming.exclusive.radio/er/bobseger/icecast.audio
-Boston,http://streaming.exclusive.radio/er/boston/icecast.audio
-Bruce Springsteen,http://streaming.exclusive.radio/er/springsteen/icecast.audio
-Bryan Adams,http://streaming.exclusive.radio/er/bryanadams/icecast.audio
-Chicago,http://streaming.exclusive.radio/er/chicago/icecast.audio
-Chris Rea,http://streaming.exclusive.radio/er/chrisrea/icecast.audio
-Coldplay,http://streaming.exclusive.radio/er/coldplay/icecast.audio
-Creedence Clearwater Revival,http://streaming.exclusive.radio/er/creedence/icecast.audio
-Crosby Stills Nash and Young,http://streaming.exclusive.radio/er/csny/icecast.audio
-David Bowie,http://streaming.exclusive.radio/er/davidbowie/icecast.audio
-Dire Straits,http://streaming.exclusive.radio/er/direstraits/icecast.audio
-Eagles,http://streaming.exclusive.radio/er/eagles/icecast.audio
-Fleetwood Mac,http://streaming.exclusive.radio/er/fleetwoodmac/icecast.audio
-Foreigner,http://streaming.exclusive.radio/er/foreigner/icecast.audio
-Genesis,http://streaming.exclusive.radio/er/genesis/icecast.audio
-Gram Parsons,http://streaming.exclusive.radio/er/gramparsons/icecast.audio
-Grateful Dead,http://streaming.exclusive.radio/er/gratefuldead/icecast.audio
-Huey Lewis &  The News,http://streaming.exclusive.radio/er/hueylewis/icecast.audio
-INXS,http://streaming.exclusive.radio/er/INXS/icecast.audio
-Journey,http://streaming.exclusive.radio/er/journey/icecast.audio
-Little Feat,http://streaming.exclusive.radio/er/littlefeat/icecast.audio
-Meat Loaf,http://streaming.exclusive.radio/er/meatloaf/icecast.audio
-Mike And The Mechanics,http://streaming.exclusive.radio/er/mikeandthemechanics/icecast.audio
-Neil Young,http://streaming.exclusive.radio/er/neilyoung/icecast.audio
-Patti Smith,http://streaming.exclusive.radio/er/pattismith/icecast.audio
-Paul Weller,http://streaming.exclusive.radio/er/paulweller/icecast.audio
-Peter Frampton,http://streaming.exclusive.radio/er/peterframpton/icecast.audio
-Pink Floyd,http://streaming.exclusive.radio/er/pinkfloyd/icecast.audio
-R.E.M.,http://streaming.exclusive.radio/er/rem/icecast.audio
-Robert Palmer,http://streaming.exclusive.radio/er/robertpalmer/icecast.audio
-Santana,http://streaming.exclusive.radio/er/santana/icecast.audio
-Sheryl Crow,http://streaming.exclusive.radio/er/sherylcrow/icecast.audio
-Steely Dan,http://streaming.exclusive.radio/er/steelydan/icecast.audio
-Steve Winwood,http://streaming.exclusive.radio/er/stevewinwood/icecast.audio
-Supertramp,http://streaming.exclusive.radio/er/supertramp/icecast.audio
-Texas,http://streaming.exclusive.radio/er/texas/icecast.audio
-The Allman Brothers Band,http://streaming.exclusive.radio/er/allmanbrothers/icecast.audio
-The Band,http://streaming.exclusive.radio/er/theband/icecast.audio
-The Doobie Brothers,http://streaming.exclusive.radio/er/doobiebrothers/icecast.audio
-The Doors,http://streaming.exclusive.radio/er/doors/icecast.audio
-The Moody Blues,http://streaming.exclusive.radio/er/moodyblues/icecast.audio
-The Steve Miller Band,http://streaming.exclusive.radio/er/stevemillerband/icecast.audio
-The Velvet Underground,http://streaming.exclusive.radio/er/velvetunderground/icecast.audio
-The White Stripes,http://streaming.exclusive.radio/er/whitestripes/icecast.audio
-Tom Petty,http://streaming.exclusive.radio/er/tompetty/icecast.audio
-Toto,http://streaming.exclusive.radio/er/toto/icecast.audio
-Yes,http://streaming.exclusive.radio/er/yes/icecast.audio
+ex_list="""-- Tick Tock Radio 1950-1959 -- 
+1950,https://streaming.ticktock.radio/tt-app/1950/icecast.audio
+1951,https://streaming.ticktock.radio/tt-app/1951/icecast.audio
+1952,https://streaming.ticktock.radio/tt-app/1952/icecast.audio
+1953,https://streaming.ticktock.radio/tt-app/1953/icecast.audio
+1954,https://streaming.ticktock.radio/tt-app/1954/icecast.audio
+1955,https://streaming.ticktock.radio/tt-app/1955/icecast.audio
+1956,https://streaming.ticktock.radio/tt-app/1956/icecast.audio
+1957,https://streaming.ticktock.radio/tt-app/1957/icecast.audio
+1958,https://streaming.ticktock.radio/tt-app/1958/icecast.audio
+1959,https://streaming.ticktock.radio/tt-app/1959/icecast.audio
+-- Tick Tock Radio 1960-1969 -- 
+1960,https://streaming.ticktock.radio/tt-app/1960/icecast.audio
+1961,https://streaming.ticktock.radio/tt-app/1961/icecast.audio
+1962,https://streaming.ticktock.radio/tt-app/1962/icecast.audio
+1963,https://streaming.ticktock.radio/tt-app/1963/icecast.audio
+1964,https://streaming.ticktock.radio/tt-app/1964/icecast.audio
+1965,https://streaming.ticktock.radio/tt-app/1965/icecast.audio
+1966,https://streaming.ticktock.radio/tt-app/1966/icecast.audio
+1967,https://streaming.ticktock.radio/tt-app/1967/icecast.audio
+1968,https://streaming.ticktock.radio/tt-app/1968/icecast.audio
+1969,https://streaming.ticktock.radio/tt-app/1969/icecast.audio
+-- Tick Tock Radio 1970-1979 -- 
+1970,https://streaming.ticktock.radio/tt-app/1970/icecast.audio
+1971,https://streaming.ticktock.radio/tt-app/1971/icecast.audio
+1972,https://streaming.ticktock.radio/tt-app/1972/icecast.audio
+1973,https://streaming.ticktock.radio/tt-app/1973/icecast.audio
+1974,https://streaming.ticktock.radio/tt-app/1974/icecast.audio
+1975,https://streaming.ticktock.radio/tt-app/1975/icecast.audio
+1976,https://streaming.ticktock.radio/tt-app/1976/icecast.audio
+1977,https://streaming.ticktock.radio/tt-app/1977/icecast.audio
+1978,https://streaming.ticktock.radio/tt-app/1978/icecast.audio
+1979,https://streaming.ticktock.radio/tt-app/1979/icecast.audio
+-- Tick Tock Radio 1980-1989 -- 
+1980,https://streaming.ticktock.radio/tt-app/1980/icecast.audio
+1981,https://streaming.ticktock.radio/tt-app/1981/icecast.audio
+1982,https://streaming.ticktock.radio/tt-app/1982/icecast.audio
+1983,https://streaming.ticktock.radio/tt-app/1983/icecast.audio
+1984,https://streaming.ticktock.radio/tt-app/1984/icecast.audio
+1985,https://streaming.ticktock.radio/tt-app/1985/icecast.audio
+1986,https://streaming.ticktock.radio/tt-app/1986/icecast.audio
+1987,https://streaming.ticktock.radio/tt-app/1987/icecast.audio
+1988,https://streaming.ticktock.radio/tt-app/1988/icecast.audio
+1989,https://streaming.ticktock.radio/tt-app/1989/icecast.audio
+-- Tick Tock Radio 1990-1999 -- 
+1990,https://streaming.ticktock.radio/tt-app/1990/icecast.audio
+1991,https://streaming.ticktock.radio/tt-app/1991/icecast.audio
+1992,https://streaming.ticktock.radio/tt-app/1992/icecast.audio
+1993,https://streaming.ticktock.radio/tt-app/1993/icecast.audio
+1994,https://streaming.ticktock.radio/tt-app/1994/icecast.audio
+1995,https://streaming.ticktock.radio/tt-app/1995/icecast.audio
+1996,https://streaming.ticktock.radio/tt-app/1996/icecast.audio
+1997,https://streaming.ticktock.radio/tt-app/1997/icecast.audio
+1998,https://streaming.ticktock.radio/tt-app/1998/icecast.audio
+1999,https://streaming.ticktock.radio/tt-app/1999/icecast.audio
+-- Tick Tock Radio 2000-2009 -- 
+2000,https://streaming.ticktock.radio/tt-app/2000/icecast.audio
+2001,https://streaming.ticktock.radio/tt-app/2001/icecast.audio
+2002,https://streaming.ticktock.radio/tt-app/2002/icecast.audio
+2003,https://streaming.ticktock.radio/tt-app/2003/icecast.audio
+2004,https://streaming.ticktock.radio/tt-app/2004/icecast.audio
+2005,https://streaming.ticktock.radio/tt-app/2005/icecast.audio
+2006,https://streaming.ticktock.radio/tt-app/2006/icecast.audio
+2007,https://streaming.ticktock.radio/tt-app/2007/icecast.audio
+2008,https://streaming.ticktock.radio/tt-app/2008/icecast.audio
+2009,https://streaming.ticktock.radio/tt-app/2009/icecast.audio
+-- Tick Tock Radio 2010-2019 -- 
+2010,https://streaming.ticktock.radio/tt-app/2010/icecast.audio
+2011,https://streaming.ticktock.radio/tt-app/2011/icecast.audio
+2012,https://streaming.ticktock.radio/tt-app/2012/icecast.audio
+2013,https://streaming.ticktock.radio/tt-app/2013/icecast.audio
+2014,https://streaming.ticktock.radio/tt-app/2014/icecast.audio
+2015,https://streaming.ticktock.radio/tt-app/2015/icecast.audio
+2016,https://streaming.ticktock.radio/tt-app/2016/icecast.audio
+2017,https://streaming.ticktock.radio/tt-app/2017/icecast.audio
+2018,https://streaming.ticktock.radio/tt-app/2018/icecast.audio
+2019,https://streaming.ticktock.radio/tt-app/2019/icecast.audio
+-- Tick Tock Radio 2020-2023 -- 
+2020,https://streaming.ticktock.radio/tt-app/2020/icecast.audio
+2021,https://streaming.ticktock.radio/tt-app/2021/icecast.audio
+2022,https://streaming.ticktock.radio/tt-app/2022/icecast.audio
+2023,https://streaming.ticktock.radio/tt-app/2023/icecast.audio
+-- Boomerang Radio --
+20's,https://drive.uber.radio/uber-app/boomerang1920s/icecast.audio
+30's,https://drive.uber.radio/uber-app/boomerang1930s/icecast.audio
+40's,https://drive.uber.radio/uber-app/boomerang1940s/icecast.audio
+50's,https://drive.uber.radio/uber-app/boomerang1950s/icecast.audio
+60's,https://drive.uber.radio/uber-app/boomerang1960s/icecast.audio
+70's,https://drive.uber.radio/uber-app/boomerang1970s/icecast.audio
+80's,https://drive.uber.radio/uber-app/boomerang1980s/icecast.audio
+90's,https://drive.uber.radio/uber-app/boomerang1990s/icecast.audio
+00's,https://drive.uber.radio/uber-app/boomerang2000s/icecast.audio
+10's,https://drive.uber.radio/uber-app/boomerang2010s/icecast.audio
+20's,https://drive.uber.radio/uber-app/boomerang2020s/icecast.audio
+-- Exclusive Radio Playlists --
+Beach Party,https://streaming.exclusive.radio/er-app/beachparty/icecast.audio
+Rock N' Roll Party,https://streaming.exclusive.radio/er-app/rocknrollparty/icecast.audio
+-- Starbox Radio Genre --
+Folk,https://drive.uber.radio/uber-app/starboxfolk/icecast.audio
+Blues,https://drive.uber.radio/uber-app/starboxblues/icecast.audio
+Country,https://drive.uber.radio/uber-app/starboxcountry/icecast.audio
+Legendary Country Boys,https://drive.uber.radio/uber-app/cmrlegendarycountryboys/icecast.audio
+New Country,https://drive.uber.radio/uber-app/starboxnewcountry/icecast.audio
+Rock,https://drive.uber.radio/uber-app/starboxrock/icecast.audio
+Irish Folk,https://drive.uber.radio/uber-app/starboxirishfolk/icecast.audio
+Soft Rock,https://drive.uber.radio/uber-app/starboxsoftrock/icecast.audio
+Easy,https://drive.uber.radio/uber-app/starboxeasy/icecast.audio
+Reggae,https://drive.uber.radio/uber-app/starboxreggae/icecast.audio
+-- Country Music Radio --
+50's Country,https://drive.uber.radio/uber-app/cmr50scountry/icecast.audio
+60's Country,https://drive.uber.radio/uber-app/cmr60scountry/icecast.audio
+70's Country,https://drive.uber.radio/uber-app/cmr70scountry/icecast.audio
+80's Country,https://drive.uber.radio/uber-app/cmr80scountry/icecast.audio
+90's Country,https://drive.uber.radio/uber-app/cmr90scountry/icecast.audio
+2000's Country,https://drive.uber.radio/uber-app/cmr00scountry/icecast.audio
+2010's Country,https://drive.uber.radio/uber-app/cmr10scountry/icecast.audio
+2020's Country,https://drive.uber.radio/uber-app/cmr20scountry/icecast.audio
+Legendary Country Boys,https://drive.uber.radio/uber-app/cmrlegendarycountryboys/icecast.audio
+Classic Country,https://drive.uber.radio/uber-app/cmrclassiccountry/icecast.audio
+Todays Country,https://drive.uber.radio/uber-app/cmrtodayscountry/icecast.audio
+Easy Country,https://drive.uber.radio/uber-app/cmreasycountry/icecast.audio
+Irish Country,https://drive.uber.radio/uber-app/cmririshcountry/icecast.audio
+Todays Country Boys,https://drive.uber.radio/uber-app/cmrtodayscountryboys/icecast.audio
+Todays Country Girls,https://drive.uber.radio/uber-app/cmrtodayscountrygirls/icecast.audio
+Country Love.https://drive.uber.radio/uber-app/cmrcountrylove/icecast.audio
+-- Country Music Radio Artists --
+Alabama,https://drive.uber.radio/uber-app/cmralabama/icecast.audio
+Brooks & Dunn,https://drive.uber.radio/uber-app/cmrbrooksanddunn/icecast.audio
+Blake Shelton,https://drive.uber.radio/uber-app/cmrblakeshelton/icecast.audio
+Brantley Gilbert,https://drive.uber.radio/uber-app/cmrbrantleygilbert/icecast.audio
+Carrie Underwood,https://drive.uber.radio/uber-app/cmrcarrieunderwood/icecast.audio
+Charley Pride,https://drive.uber.radio/uber-app/cmrcharleypride/icecast.audio
+Chicks,https://drive.uber.radio/uber-app/cmrdixiechicks/icecast.audio
+Colt Ford,https://drive.uber.radio/uber-app/cmrcoltford/icecast.audio
+Dallas Smith,https://drive.uber.radio/uber-app/cmrdallassmith/icecast.audio
+Don Williams,https://drive.uber.radio/uber-app/cmrdonwilliams/icecast.audio
+Dolly Parton,https://drive.uber.radio/uber-app/cmrdollyparton/icecast.audio
+Florida Georgia Line,https://drive.uber.radio/uber-app/cmrfloridageorgialine/icecast.audio
+Garth Brooks,https://drive.uber.radio/uber-app/cmrgarthbrooks/icecast.audio
+George Jones,https://drive.uber.radio/uber-app/cmrgeorgejones/icecast.audio
+George Strait,https://drive.uber.radio/uber-app/cmrgeorgestrait/icecast.audio
+Glen Campbell,https://drive.uber.radio/uber-app/cmrglencampbell/icecast.audio
+Gretchen Peters,https://drive.uber.radio/uber-app/cmrgretchenpeters/icecast.audio
+Hank Williams,https://drive.uber.radio/uber-app/cmrhankwilliams/icecast.audio
+Jim Reeves,https://drive.uber.radio/uber-app/cmrjimreeves/icecast.audio
+Keith Urban,https://drive.uber.radio/uber-app/cmrkeithurban/icecast.audio
+Kenny Chesney,https://drive.uber.radio/uber-app/cmrkennychesney/icecast.audio
+Kiefer Sutherland,https://drive.uber.radio/uber-app/cmrkiefersutherland/icecast.audio
+Kip Moore,https://drive.uber.radio/uber-app/cmrkipmoore/icecast.audio
+Lady A,https://drive.uber.radio/uber-app/cmrladyantebellum/icecast.audio
+Loretta Lynn,https://drive.uber.radio/uber-app/cmrlorettalynn/icecast.audio
+Luke Bryan,https://drive.uber.radio/uber-app/cmrlukebryan/icecast.audio
+Merle Haggard,https://drive.uber.radio/uber-app/cmrmerlehaggard/icecast.audio
+Old Dominion,https://drive.uber.radio/uber-app/cmrolddominion/icecast.audio
+Patsy Cline,https://drive.uber.radio/uber-app/cmrpatsycline/icecast.audio
+Randy Travis,https://drive.uber.radio/uber-app/cmrrandytravis/icecast.audio
+Ronnie Milsap,https://drive.uber.radio/uber-app/cmrronniemilsap/icecast.audio
+Reba McEntire,https://drive.uber.radio/uber-app/cmrrebamcentire/icecast.audio
+Shania Twain,https://drive.uber.radio/uber-app/cmrshaniatwain/icecast.audio
+Tammy Wynette,https://drive.uber.radio/uber-app/cmrtammywynette/icecast.audio
+The Mavericks,https://drive.uber.radio/uber-app/cmrthemavericks/icecast.audio
+Trace Adkins,https://drive.uber.radio/uber-app/cmrtraceadkins/icecast.audio
+Tim McGraw,https://drive.uber.radio/uber-app/cmrtimmcgraw/icecast.audio
+Toby Keith,https://drive.uber.radio/uber-app/cmrtobykeith/icecast.audio
+Waylon Jennings,https://drive.uber.radio/uber-app/cmrwaylonjennings/icecast.audio
+Willie Nelson,https://drive.uber.radio/uber-app/cmrwillienelson/icecast.audio
+Zac Brown Band,https://drive.uber.radio/uber-app/cmrzacbrownband/icecast.audio
+-- Exclusive Radio Oldies --
+Bee Gees,https://streaming.exclusive.radio/er-app/beegees/icecast.audio
+Beatles,https://streaming.exclusive.radio/er-app/beatles/icecast.audio
+Byrds,https://streaming.exclusive.radio/er-app/thebyrds/icecast.audio
+Hollies,https://streaming.exclusive.radio/er-app/thehollies/icecast.audio
+Monkees,https://streaming.exclusive.radio/er-app/themonkees/icecast.audio
+Kinks,https://streaming.exclusive.radio/er-app/thekinks/icecast.audio
+Everly Brothers,https://streaming.exclusive.radio/er-app/everlybrothers/icecast.audio
+Rolling Stones,https://streaming.exclusive.radio/er-app/rollingstones/icecast.audio
+The Who,https://streaming.exclusive.radio/er-app/thewho/icecast.audio
+Creedence Clearwater Revival,https://streaming.exclusive.radio/er-app/creedence/icecast.audio
+The Drifters,https://streaming.exclusive.radio/er-app/drifters/icecast.audio
+The Four Tops,https://streaming.exclusive.radio/er-app/fourtops/icecast.audio
+The Band,https://streaming.exclusive.radio/er-app/theband/icecast.audio
+The Doors,https://streaming.exclusive.radio/er-app/doors/icecast.audio
+Fats Domino,https://streaming.exclusive.radio/er-app/fatsdomino/icecast.audio
+Small Faces,https://streaming.exclusive.radio/er-app/smallfaces/icecast.audio
+Moody Blues,https://streaming.exclusive.radio/er-app/moodyblues/icecast.audio
+Neil Diamond,https://streaming.exclusive.radio/er-app/neildiamond/icecast.audio
+Bread,https://streaming.exclusive.radio/er-app/bread/icecast.audio
+Jethro Tull,https://streaming.exclusive.radio/er-app/jethrotull/icecast.audio
+Joan Baez,https://streaming.exclusive.radio/er-app/joanbaez/icecast.audio
+Leonard Cohen,https://streaming.exclusive.radio/er-app/leonardcohen/icecast.audio
+Elvis Presley,https://streaming.exclusive.radio/er-app/elvispresley/icecast.audio
+Buddy Holly,https://streaming.exclusive.radio/er-app/buddyholly/icecast.audio
+Cat Stevens,https://streaming.exclusive.radio/er-app/catstevens/icecast.audio
+Paul McCartney,https://streaming.exclusive.radio/er-app/paulmccartney/icecast.audio
+-- Exclusive Radio Hot Now --
+Chart,https://streaming.exclusive.radio/er-app/chart/icecast.audio
+Adam Lambert,https://streaming.exclusive.radio/er-app/adamlambert/icecast.audio
+Adele,https://streaming.exclusive.radio/er-app/adele/icecast.audio
+Afrobeats,https://streaming.exclusive.radio/er-app/afrobeats/icecast.audio
+Alec Benjamin,https://streaming.exclusive.radio/er-app/alecbenjamin/icecast.audio
+Ariana Grande,https://streaming.exclusive.radio/er-app/arianagrande/icecast.audio
+Avicii,https://streaming.exclusive.radio/er-app/avicii/icecast.audio
+Bad Bunny,https://streaming.exclusive.radio/er-app/badbunny/icecast.audio
+Beyonce,https://streaming.exclusive.radio/er-app/beyonce/icecast.audio
+Billie Eilish,https://streaming.exclusive.radio/er-app/billyeilish/icecast.audio
+Britney Spears,https://streaming.exclusive.radio/er-app/britney/icecast.audio
+Bruno Mars,https://streaming.exclusive.radio/er-app/brunomars/icecast.audio
+Calvin Harris,https://streaming.exclusive.radio/er-app/calvinharris/icecast.audio
+Camilla Cabello,https://streaming.exclusive.radio/er-app/camilacabello/icecast.audio
+Cardi B,https://streaming.exclusive.radio/er-app/cardib/icecast.audio
+Celeste,https://streaming.exclusive.radio/er-app/celeste/icecast.audio
+Daft Punk,https://streaming.exclusive.radio/er-app/daftpunk/icecast.audio
+Drake,https://streaming.exclusive.radio/er-app/drake/icecast.audio
+Dua Lipa,https://streaming.exclusive.radio/er-app/dualipa/icecast.audio
+Ed Sheeran,https://streaming.exclusive.radio/er-app/edsheeran/icecast.audio
+Ellie Goulding,https://streaming.exclusive.radio/er-app/elliegoulding/icecast.audio
+Enrique Iglesias,https://streaming.exclusive.radio/er-app/enriqueiglesias/icecast.audio
+Freya Ridings,https://streaming.exclusive.radio/er-app/freyaridings/icecast.audio
+George Ezra,https://streaming.exclusive.radio/er-app/georgeezra/icecast.audio
+Grace VanderWaal,https://streaming.exclusive.radio/er-app/gracevanderwaal/icecast.audio
+Gregory Porter,https://streaming.exclusive.radio/er-app/gregoryporter/icecast.audio
+Harry Styles,https://streaming.exclusive.radio/er-app/harrystyles/icecast.audio
+Imagine Dragons,https://streaming.exclusive.radio/er-app/imaginedragons/icecast.audio
+James Blunt,https://streaming.exclusive.radio/er-app/jamesblunt/icecast.audio
+Jennifer Lopez,https://streaming.exclusive.radio/er-app/jenniferlopez/icecast.audio
+Jonas Brothers,https://streaming.exclusive.radio/er-app/jonasbrothers/icecast.audio
+Justin Bieber,https://streaming.exclusive.radio/er-app/justinbieber/icecast.audio
+Justin Timberlake,https://streaming.exclusive.radio/er-app/justintimberlake/icecast.audio
+Katy Perry,https://streaming.exclusive.radio/er-app/katyperry/icecast.audio
+Kehlani,https://streaming.exclusive.radio/er-app/kehlani/icecast.audio
+Kelly Clarkson,https://streaming.exclusive.radio/er-app/kellyclarkson/icecast.audio
+Kendrick Lamar,https://streaming.exclusive.radio/er-app/kendricklamar/icecast.audio
+Lady Gaga,https://streaming.exclusive.radio/er-app/ladygaga/icecast.audio
+Lewis Capaldi,https://streaming.exclusive.radio/er-app/lewiscapaldi/icecast.audio
+Little Mix,https://streaming.exclusive.radio/er-app/littlemix/icecast.audio
+Lizzo,https://streaming.exclusive.radio/er-app/lizzo/icecast.audio
+Lorde,https://streaming.exclusive.radio/er-app/lorde/icecast.audio
+Mabel,https://streaming.exclusive.radio/er-app/mabel/icecast.audio
+Maroon 5,https://streaming.exclusive.radio/er-app/maroon5/icecast.audio
+Michael Buble,https://streaming.exclusive.radio/er-app/michaelbuble/icecast.audio
+Michael Kiwanuka,https://streaming.exclusive.radio/er-app/michaelkiwanuka/icecast.audio
+Miley Cyrus,https://streaming.exclusive.radio/er-app/mileycyrus/icecast.audio
+Niall Horan,https://streaming.exclusive.radio/er-app/niallhoran/icecast.audio
+Nicki Minaj,https://streaming.exclusive.radio/er-app/nickiminaj/icecast.audio
+One Direction,https://streaming.exclusive.radio/er-app/onedirection/icecast.audio
+Paloma Faith,https://streaming.exclusive.radio/er-app/palomafaith/icecast.audio
+Pharrell Williams,https://streaming.exclusive.radio/er-app/pharrellwilliams/icecast.audio
+Pink,https://streaming.exclusive.radio/er-app/pink/icecast.audio
+Post Malone,https://streaming.exclusive.radio/er-app/postmalone/icecast.audio
+Pussycat Dolls,https://streaming.exclusive.radio/er-app/pussycatdolls/icecast.audio
+Rihanna,https://streaming.exclusive.radio/er-app/rihanna/icecast.audio
+Rita Ora,https://streaming.exclusive.radio/er-app/ritaora/icecast.audio
+Sam Smith,https://streaming.exclusive.radio/er-app/samsmith/icecast.audio
+Shakira,https://streaming.exclusive.radio/er-app/shakira/icecast.audio
+Shawn Mendes,https://streaming.exclusive.radio/er-app/shawnmendes/icecast.audio
+Sia,https://streaming.exclusive.radio/er-app/sia/icecast.audio
+Taylor Swift,https://streaming.exclusive.radio/er-app/taylorswift/icecast.audio
+The 1975,https://streaming.exclusive.radio/er-app/the1975/icecast.audio
+The Killers,https://streaming.exclusive.radio/er-app/thekillers/icecast.audio
+The Weeknd,https://streaming.exclusive.radio/er-app/theweeknd/icecast.audio
+Tinie Tempah,https://streaming.exclusive.radio/er-app/tinietempah/icecast.audio
+Travis Scott,https://streaming.exclusive.radio/er-app/travisscott/icecast.audio
+Twenty One Pilots,https://streaming.exclusive.radio/er-app/twentyonepilots/icecast.audio
+2020's,https://streaming.exclusive.radio/er-app/2020/icecast.audio
 -- Exclusive Radio Folk --
-Folk,http://streaming.exclusive.radio/er/folk/icecast.audio
-Irish Folk,http://streaming.exclusive.radio/er/irishfolk/icecast.audio
-Ben Harper,http://streaming.exclusive.radio/er/benharper/icecast.audio
-Bob Dylan,http://streaming.exclusive.radio/er/bobdylan/icecast.audio
-Cat Stevens,http://streaming.exclusive.radio/er/catstevens/icecast.audio
-Eva Cassidy,http://streaming.exclusive.radio/er/evacassidy/icecast.audio
-Grateful Dead,http://streaming.exclusive.radio/er/gratefuldead/icecast.audio
-James Taylor,http://streaming.exclusive.radio/er/jamestaylor/icecast.audio
-Jethro Tull,http://streaming.exclusive.radio/er/jethrotull/icecast.audio
-John Denver,http://streaming.exclusive.radio/er/johndenver/icecast.audio
-John Martyn,http://streaming.exclusive.radio/er/johnmartyn/icecast.audio
-Joni Mitchell,http://streaming.exclusive.radio/er/jonimitchell/icecast.audio
-Kate Rusby,http://streaming.exclusive.radio/er/katerusby/icecast.audio
-Leonard Cohen,http://streaming.exclusive.radio/er/leonardcohen/icecast.audio
-Loudon Wainwright III,http://streaming.exclusive.radio/er/loudonwainwrightiii/icecast.audio
-Neil Young,http://streaming.exclusive.radio/er/neilyoung/icecast.audio
-Simon &  Garfunkel,http://streaming.exclusive.radio/er/simongarfunkle/icecast.audio
-Steeleye Span,http://streaming.exclusive.radio/er/steeleyespan/icecast.audio
-The Dubliners,http://streaming.exclusive.radio/er/thedubliners/icecast.audio
--- Exclusive Radio Styles --
-Blues,http://streaming.exclusive.radio/er/blues/icecast.audio
-Classical,http://streaming.exclusive.radio/er/classical/icecast.audio
-Country,http://streaming.exclusive.radio/er/country/icecast.audio
-Easy,http://streaming.exclusive.radio/er/easy/icecast.audio
-Folk,http://streaming.exclusive.radio/er/folk/icecast.audio
-Jazz,http://streaming.exclusive.radio/er/jazz/icecast.audio
-Motown,http://streaming.exclusive.radio/er/motown/icecast.audio
-Rock,http://streaming.exclusive.radio/er/rock/icecast.audio
-Soft Rock,http://streaming.exclusive.radio/er/softrock/icecast.audio
-Soul,http://streaming.exclusive.radio/er/soul/icecast.audio
-Afrobeats,http://streaming.exclusive.radio/er/afrobeats/icecast.audio
-Beach Party,http://streaming.exclusive.radio/er/beachparty/icecast.audio
-Dance Chill,http://streaming.exclusive.radio/er/chilldance/icecast.audio
-Good Afternoon,http://streaming.exclusive.radio/er/afternoon/icecast.audio
-Good Evening,http://streaming.exclusive.radio/er/goodevening/icecast.audio
-Good Morning,http://streaming.exclusive.radio/er/goodmorning/icecast.audio
-Happy,http://streaming.exclusive.radio/er/happy/icecast.audio
-Hollywood &  Broadway Musicals,http://streaming.exclusive.radio/er/hollywoodandbroadway/icecast.audio
-John Paul George &  Ringo,http://streaming.exclusive.radio/er/johnpaulgeorgeringo/icecast.audio
-Movie &  TV Themes,http://streaming.exclusive.radio/er/movieandtvthemes/icecast.audio
-Party,http://streaming.exclusive.radio/er/party/icecast.audio
-Pop Princesses,http://streaming.exclusive.radio/er/popprincesses/icecast.audio
-Rat Pack,http://streaming.exclusive.radio/er/ratpack/icecast.audio
-Reggae Party,http://streaming.exclusive.radio/er/reggaeparty/icecast.audio
-Rock N' Roll Party,http://streaming.exclusive.radio/er/rocknrollparty/icecast.audio
-Soul Royalty,http://streaming.exclusive.radio/er/soulroyalty/icecast.audio
-Wedding,http://streaming.exclusive.radio/er/wedding/icecast.audio
-Wedding Classical,http://streaming.exclusive.radio/er/weddingclassical/icecast.audio
-West Coast,http://streaming.exclusive.radio/er/westcoast/icecast.audio
-Xmas Carols,http://streaming.exclusive.radio/er/christmascarols/icecast.audio
-Xmas Pop,http://streaming.exclusive.radio/er/christmaspop/icecast.audio
--- Exclusive Radio Decades --
-20's,http://streaming.exclusive.radio/er/1920/icecast.audio
-30's,http://streaming.exclusive.radio/er/1930/icecast.audio
-40's,http://streaming.exclusive.radio/er/1940/icecast.audio
-50's,http://streaming.exclusive.radio/er/50s/icecast.audio
-60's,http://streaming.exclusive.radio/er/60s/icecast.audio
-70's,http://streaming.exclusive.radio/er/70s/icecast.audio
-80's,http://streaming.exclusive.radio/er/80s/icecast.audio
-90's,http://streaming.exclusive.radio/er/90s/icecast.audio
-00's,http://streaming.exclusive.radio/er/00s/icecast.audio
-2010's,http://streaming.exclusive.radio/er/10s/icecast.audio
-2020's,http://streaming.exclusive.radio/er/2020/icecast.audio
--- Exclusive Radio Rock --
-Rock,http://streaming.exclusive.radio/er/rock/icecast.audio
-AC/DC,http://streaming.exclusive.radio/er/acdc/icecast.audio
-Aerosmith,http://streaming.exclusive.radio/er/aerosmith/icecast.audio
-Alice Cooper,http://streaming.exclusive.radio/er/alicecooper/icecast.audio
-Black Sabbath,http://streaming.exclusive.radio/er/blacksabbath/icecast.audio
-Bon Jovi,http://streaming.exclusive.radio/er/bonjovi/icecast.audio
-Cheap Trick,http://streaming.exclusive.radio/er/cheaptrick/icecast.audio
-Deep Purple,http://streaming.exclusive.radio/er/deeppurple/icecast.audio
-Def Leppard,http://streaming.exclusive.radio/er/defleppard/icecast.audio
-Eric Clapton,http://streaming.exclusive.radio/er/ericclapton/icecast.audio
-Foo Fighters,http://streaming.exclusive.radio/er/foofighters/icecast.audio
-Green Day,http://streaming.exclusive.radio/er/greenday/icecast.audio
-Guns N' Roses,http://streaming.exclusive.radio/er/gunsnroses/icecast.audio
-Iron Maiden,http://streaming.exclusive.radio/er/ironmaiden/icecast.audio
-Jimi Hendrix,http://streaming.exclusive.radio/er/hendrix/icecast.audio
-Johnny Winter,http://streaming.exclusive.radio/er/johnnywinter/icecast.audio
-KISS,http://streaming.exclusive.radio/er/kiss/icecast.audio
-Led Zeppelin,http://streaming.exclusive.radio/er/ledzeppelin/icecast.audio
-Nickelback,http://streaming.exclusive.radio/er/nickelback/icecast.audio
-Nirvana,http://streaming.exclusive.radio/er/nirvana/icecast.audio
-Oasis,http://streaming.exclusive.radio/er/oasis/icecast.audio
-Queen,http://streaming.exclusive.radio/er/queen/icecast.audio
-Red Hot Chili Peppers,http://streaming.exclusive.radio/er/chilipeppers/icecast.audio
-Rory Gallagher,http://streaming.exclusive.radio/er/rorygallagher/icecast.audio
-Rush,http://streaming.exclusive.radio/er/rush/icecast.audio
-Scorpions,http://streaming.exclusive.radio/er/scorpions/icecast.audio
-Simple Minds,http://streaming.exclusive.radio/er/simpleminds/icecast.audio
-Stone Temple Pilots,http://streaming.exclusive.radio/er/stonetemplepilots/icecast.audio
-The Killers,http://streaming.exclusive.radio/er/thekillers/icecast.audio
-The Rolling Stones,http://streaming.exclusive.radio/er/rollingstones/icecast.audio
-The Who,http://streaming.exclusive.radio/er/thewho/icecast.audio
-Thin Lizzy,http://streaming.exclusive.radio/er/thinlizzy/icecast.audio
-U2,http://streaming.exclusive.radio/er/u2/icecast.audio
-Van Halen,http://streaming.exclusive.radio/er/vanhalen/icecast.audio
-Whitesnake,http://streaming.exclusive.radio/er/whitesnake/icecast.audio
-ZZ Top,http://streaming.exclusive.radio/er/zztop/icecast.audio
+Irish Folk,https://streaming.exclusive.radio/er-app/irishfolk/icecast.audio
+Ben Harper,https://streaming.exclusive.radio/er-app/benharper/icecast.audio
+Bob Dylan,https://streaming.exclusive.radio/er-app/bobdylan/icecast.audio
+Don McLean,https://streaming.exclusive.radio/er-app/donmclean/icecast.audio
+Eva Cassidy,https://streaming.exclusive.radio/er-app/evacassidy/icecast.audio
+James Taylor,https://streaming.exclusive.radio/er-app/jamestaylor/icecast.audio
+Jethro Tull,https://streaming.exclusive.radio/er-app/jethrotull/icecast.audio
+Joan Baez,https://streaming.exclusive.radio/er-app/joanbaez/icecast.audio
+John Denver,https://streaming.exclusive.radio/er-app/johndenver/icecast.audio
+John Martyn,https://streaming.exclusive.radio/er-app/johnmartyn/icecast.audio
+Joni Mitchell,https://streaming.exclusive.radio/er-app/jonimitchell/icecast.audio
+Judy Collins,https://streaming.exclusive.radio/er-app/judycollins/icecast.audio
+Kate Rusby,https://streaming.exclusive.radio/er-app/katerusby/icecast.audio
+Leonard Cohen,https://streaming.exclusive.radio/er-app/leonardcohen/icecast.audio
+Loudon Wainwright III,https://streaming.exclusive.radio/er-app/loudonwainwrightiii/icecast.audio
+Pete Seeger,https://streaming.exclusive.radio/er-app/peteseeger/icecast.audio
+Steeleye Span,https://streaming.exclusive.radio/er-app/steeleyespan/icecast.audio
+The Dubliners,https://streaming.exclusive.radio/er-app/thedubliners/icecast.audio
+Tom Paxton,https://streaming.exclusive.radio/er-app/tompaxton/icecast.audio
+Tom Waits,https://streaming.exclusive.radio/er-app/tomwaits/icecast.audio
+Woody Guthrie,https://streaming.exclusive.radio/er-app/woodieguthrie/icecast.audio
+-- Exclusive Radio RnB --
+RnB,https://streaming.exclusive.radio/er-app/rnb/icecast.audio
+50 Cent,https://streaming.exclusive.radio/er-app/50cent/icecast.audio
+Beastie Boys,https://streaming.exclusive.radio/er-app/beastieboys/icecast.audio
+Dr. Dre,https://streaming.exclusive.radio/er-app/drdre/icecast.audio
+Eminem,https://streaming.exclusive.radio/er-app/eminem/icecast.audio
+JAY-Z,https://streaming.exclusive.radio/er-app/jay-z/icecast.audio
+Kanye West,https://streaming.exclusive.radio/er-app/kanyewest/icecast.audio
+Run-DMC,https://streaming.exclusive.radio/er-app/rundmc/icecast.audio
+Stormzy,https://streaming.exclusive.radio/er-app/stormzy/icecast.audio
+will.i.am,https://streaming.exclusive.radio/er-app/william/icecast.audio
 -- Exclusive Radio Legends --
-10cc,http://streaming.exclusive.radio/er/10cc/icecast.audio
-A-Ha,http://streaming.exclusive.radio/er/aha/icecast.audio
-ABBA,http://streaming.exclusive.radio/er/abba/icecast.audio
-Alice Cooper,http://streaming.exclusive.radio/er/alicecooper/icecast.audio
-Annie Lennox,http://streaming.exclusive.radio/er/annielennox/icecast.audio
-Backstreet Boys,http://streaming.exclusive.radio/er/backstreetboys/icecast.audio
-Barry Manilow,http://streaming.exclusive.radio/er/barrymanilow/icecast.audio
-Belinda Carlisle,http://streaming.exclusive.radio/er/belindacarlisle/icecast.audio
-Billy Joel,http://streaming.exclusive.radio/er/billyjoel/icecast.audio
-Blondie,http://streaming.exclusive.radio/er/blondie/icecast.audio
-Blur,http://streaming.exclusive.radio/er/blur/icecast.audio
-Bob Marley,http://streaming.exclusive.radio/er/bobmarley/icecast.audio
-Bryan Ferry,http://streaming.exclusive.radio/er/bryanferry/icecast.audio
-Buddy Holly,http://streaming.exclusive.radio/er/buddyholly/icecast.audio
-Cat Stevens,http://streaming.exclusive.radio/er/catstevens/icecast.audio
-Cher,http://streaming.exclusive.radio/er/cher/icecast.audio
-Chuck Berry,http://streaming.exclusive.radio/er/chuckberry/icecast.audio
-Cliff Richard,http://streaming.exclusive.radio/er/cliffrichard/icecast.audio
-Crowded House,http://streaming.exclusive.radio/er/crowdedhouse/icecast.audio
-Depeche Mode,http://streaming.exclusive.radio/er/depechemode/icecast.audio
-Diana Ross,http://streaming.exclusive.radio/er/dianaross/icecast.audio
-Donna Summer,http://streaming.exclusive.radio/er/donnasummer/icecast.audio
-Duran Duran,http://streaming.exclusive.radio/er/duranduran/icecast.audio
-Electric Light Orchestra,http://streaming.exclusive.radio/er/elo/icecast.audio
-Elton John,http://streaming.exclusive.radio/er/eltonjohn/icecast.audio
-Elvis Costello,http://streaming.exclusive.radio/er/elviscostello/icecast.audio
-Elvis Presley,http://streaming.exclusive.radio/er/elvispresley/icecast.audio
-Erasure,http://streaming.exclusive.radio/er/erasure/icecast.audio
-Eric Clapton,http://streaming.exclusive.radio/er/ericclapton/icecast.audio
-Eurythmics,http://streaming.exclusive.radio/er/eurythmics/icecast.audio
-Fats Domino,http://streaming.exclusive.radio/er/fatsdomino/icecast.audio
-Frank Sinatra,http://streaming.exclusive.radio/er/franksinatra/icecast.audio
-Frankie Valli &  The Four Seasons,http://streaming.exclusive.radio/er/frankievalli/icecast.audio
-George Benson,http://streaming.exclusive.radio/er/georgebenson/icecast.audio
-George Harrison,http://streaming.exclusive.radio/er/georgeharrison/icecast.audio
-George Michael,http://streaming.exclusive.radio/er/georgemichael/icecast.audio
-Gloria Estefan,http://streaming.exclusive.radio/er/gloriaestefan/icecast.audio
-Hall &  Oates,http://streaming.exclusive.radio/er/hallandoates/icecast.audio
-Jackie Wilson,http://streaming.exclusive.radio/er/jackiewilson/icecast.audio
-Jackson Browne,http://streaming.exclusive.radio/er/jacksonbrowne/icecast.audio
-Jason Donovan,http://streaming.exclusive.radio/er/jasondonovan/icecast.audio
-Jerry Lee Lewis,http://streaming.exclusive.radio/er/jerryleelewis/icecast.audio
-John Legend,http://streaming.exclusive.radio/er/johnlegend/icecast.audio
-John Lennon,http://streaming.exclusive.radio/er/lennon/icecast.audio
-Johnny Cash,http://streaming.exclusive.radio/er/johnnycash/icecast.audio
-Kate Bush,http://streaming.exclusive.radio/er/katebush/icecast.audio
-Keane,http://streaming.exclusive.radio/er/keane/icecast.audio
-Kenny Rogers,http://streaming.exclusive.radio/er/kennyrogers/icecast.audio
-Kylie Minogue,http://streaming.exclusive.radio/er/kylie/icecast.audio
-Little Richard,http://streaming.exclusive.radio/er/littlerichard/icecast.audio
-Madonna,http://streaming.exclusive.radio/er/madonna/icecast.audio
-Manic Street Preachers,http://streaming.exclusive.radio/er/manicstreetpreachers/icecast.audio
-Mariah Carey,http://streaming.exclusive.radio/er/mariahcarey/icecast.audio
-Moby,http://streaming.exclusive.radio/er/moby/icecast.audio
-New Order,http://streaming.exclusive.radio/er/neworder/icecast.audio
-Nina Simone,http://streaming.exclusive.radio/er/ninasimone/icecast.audio
-Oasis,http://streaming.exclusive.radio/er/oasis/icecast.audio
-Olivia Newton John,http://streaming.exclusive.radio/er/onj/icecast.audio
-Paul McCartney,http://streaming.exclusive.radio/er/paulmccartney/icecast.audio
-Pet Shop Boys,http://streaming.exclusive.radio/er/petshopboys/icecast.audio
-Phil Collins,http://streaming.exclusive.radio/er/philcollins/icecast.audio
-Prince,http://streaming.exclusive.radio/er/prince/icecast.audio
-Queen,http://streaming.exclusive.radio/er/queen/icecast.audio
-Ramones,http://streaming.exclusive.radio/er/ramones/icecast.audio
-Ray Charles,http://streaming.exclusive.radio/er/raycharles/icecast.audio
-Rod Stewart,http://streaming.exclusive.radio/er/rodstewart/icecast.audio
-Roxette,http://streaming.exclusive.radio/er/roxette/icecast.audio
-Roy Orbison,http://streaming.exclusive.radio/er/royorbison/icecast.audio
-Savage Garden,http://streaming.exclusive.radio/er/savagegarden/icecast.audio
-Simon &  Garfunkel,http://streaming.exclusive.radio/er/simongarfunkle/icecast.audio
-Small Faces,http://streaming.exclusive.radio/er/smallfaces/icecast.audio
-Snow Patrol,http://streaming.exclusive.radio/er/snowpatrol/icecast.audio
-Spandau Ballet,http://streaming.exclusive.radio/er/spandauballet/icecast.audio
-Sting,http://streaming.exclusive.radio/er/sting/icecast.audio
-Suzanne Vega,http://streaming.exclusive.radio/er/suzannevega/icecast.audio
-T-Rex,http://streaming.exclusive.radio/er/trex/icecast.audio
-Take That,http://streaming.exclusive.radio/er/takethat/icecast.audio
-Talking Heads,http://streaming.exclusive.radio/er/talkingheads/icecast.audio
-Tears For Fears,http://streaming.exclusive.radio/er/tearsforfears/icecast.audio
-Texas,http://streaming.exclusive.radio/er/texas/icecast.audio
-The Beach Boys,http://streaming.exclusive.radio/er/beachboys/icecast.audio
-The Beatles,http://streaming.exclusive.radio/er/beatles/icecast.audio
-The Bee Gees,http://streaming.exclusive.radio/er/beegees/icecast.audio
-The Byrds,http://streaming.exclusive.radio/er/thebyrds/icecast.audio
-The Cure,http://streaming.exclusive.radio/er/thecure/icecast.audio
-The Everly Brothers,http://streaming.exclusive.radio/er/everlybrothers/icecast.audio
-The Human League,http://streaming.exclusive.radio/er/humanleague/icecast.audio
-The Kinks,http://streaming.exclusive.radio/er/thekinks/icecast.audio
-The Police,http://streaming.exclusive.radio/er/police/icecast.audio
-The Pretenders,http://streaming.exclusive.radio/er/pretenders/icecast.audio
-The Rolling Stones,http://streaming.exclusive.radio/er/rollingstones/icecast.audio
-Tina Turner,http://streaming.exclusive.radio/er/tinaturner/icecast.audio
-Tom Jones,http://streaming.exclusive.radio/er/tomjones/icecast.audio
-Tom Petty,http://streaming.exclusive.radio/er/tompetty/icecast.audio
-Tony Bennett,http://streaming.exclusive.radio/er/tonybennett/icecast.audio
-UB40,http://streaming.exclusive.radio/er/ub40/icecast.audio
-Van Morrison,http://streaming.exclusive.radio/er/vanmorrison/icecast.audio
-Wham!,http://streaming.exclusive.radio/er/wham/icecast.audio
-Whitney Houston,http://streaming.exclusive.radio/er/whitneyhouston/icecast.audio
--- Exclusive Radio Pop / Rock --
-10cc,http://streaming.exclusive.radio/er/10cc/icecast.audio
-Adam Lambert,http://streaming.exclusive.radio/er/adamlambert/icecast.audio
-Afrobeats,http://streaming.exclusive.radio/er/afrobeats/icecast.audio
-Al Jarreau,http://streaming.exclusive.radio/er/aljarreau/icecast.audio
-Alanis Morissette,http://streaming.exclusive.radio/er/alanismorissette/icecast.audio
-Albert Collins,http://streaming.exclusive.radio/er/albertcollins/icecast.audio
-Annie Lennox,http://streaming.exclusive.radio/er/annielennox/icecast.audio
-Backstreet Boys,http://streaming.exclusive.radio/er/backstreetboys/icecast.audio
-Beastie Boys,http://streaming.exclusive.radio/er/beastieboys/icecast.audio
-Ben Harper,http://streaming.exclusive.radio/er/benharper/icecast.audio
-Bette Midler,http://streaming.exclusive.radio/er/bettemidler/icecast.audio
-Billy Idol,http://streaming.exclusive.radio/er/billyidol/icecast.audio
-Booker T &  The MG's,http://streaming.exclusive.radio/er/bookert/icecast.audio
-Boston,http://streaming.exclusive.radio/er/boston/icecast.audio
-Bread,http://streaming.exclusive.radio/er/bread/icecast.audio
-Celine Dion,http://streaming.exclusive.radio/er/celinedion/icecast.audio
-Cheap Trick,http://streaming.exclusive.radio/er/cheaptrick/icecast.audio
-Chic,http://streaming.exclusive.radio/er/chic/icecast.audio
-Chris Rea,http://streaming.exclusive.radio/er/chrisrea/icecast.audio
-Curtis Mayfield,http://streaming.exclusive.radio/er/curtismayfield/icecast.audio
-David Soul,http://streaming.exclusive.radio/er/davidsoul/icecast.audio
-Dean Martin,http://streaming.exclusive.radio/er/deanmartin/icecast.audio
-Dionne Warwick,http://streaming.exclusive.radio/er/dionnewarwick/icecast.audio
-Engelbert Humperdinck,http://streaming.exclusive.radio/er/engelberthumperdinck/icecast.audio
-Eva Cassidy,http://streaming.exclusive.radio/er/evacassidy/icecast.audio
-Fats Domino,http://streaming.exclusive.radio/er/fatsdomino/icecast.audio
-Fats Waller,http://streaming.exclusive.radio/er/fatswaller/icecast.audio
-Frankie Valli &  The Four Seasons,http://streaming.exclusive.radio/er/frankievalli/icecast.audio
-Gershwin,http://streaming.exclusive.radio/er/gershwin/icecast.audio
-Grace VanderWaal,http://streaming.exclusive.radio/er/gracevanderwaal/icecast.audio
-Gram Parsons,http://streaming.exclusive.radio/er/gramparsons/icecast.audio
-Happy,http://streaming.exclusive.radio/er/happy/icecast.audio
-Hollywood &  Broadway Musicals,http://streaming.exclusive.radio/er/hollywoodandbroadway/icecast.audio
-Iron Maiden,http://streaming.exclusive.radio/er/ironmaiden/icecast.audio
-J J Cale,http://streaming.exclusive.radio/er/jjcale/icecast.audio
-Jack Johnson,http://streaming.exclusive.radio/er/jackjohnson/icecast.audio
-Jackie Wilson,http://streaming.exclusive.radio/er/jackiewilson/icecast.audio
-James Blunt,http://streaming.exclusive.radio/er/jamesblunt/icecast.audio
-Jason Donovan,http://streaming.exclusive.radio/er/jasondonovan/icecast.audio
-Jethro Tull,http://streaming.exclusive.radio/er/jethrotull/icecast.audio
-Jimmy Rogers,http://streaming.exclusive.radio/er/jimmyrogers/icecast.audio
-John Paul George &  Ringo,http://streaming.exclusive.radio/er/johnpaulgeorgeringo/icecast.audio
-Joji,http://streaming.exclusive.radio/er/joji/icecast.audio
-Kate Rusby,http://streaming.exclusive.radio/er/katerusby/icecast.audio
-Kenny Chesney,http://streaming.exclusive.radio/er/kennychesney/icecast.audio
-Lizzo,http://streaming.exclusive.radio/er/lizzo/icecast.audio
-Loudon Wainwright III,http://streaming.exclusive.radio/er/loudonwainwrightiii/icecast.audio
-Manic Street Preachers,http://streaming.exclusive.radio/er/manicstreetpreachers/icecast.audio
-Mariah Carey,http://streaming.exclusive.radio/er/mariahcarey/icecast.audio
-Mary J. Blige,http://streaming.exclusive.radio/er/maryjblige/icecast.audio
-Michael Kiwanuka,http://streaming.exclusive.radio/er/michaelkiwanuka/icecast.audio
-Mike And The Mechanics,http://streaming.exclusive.radio/er/mikeandthemechanics/icecast.audio
-Moby,http://streaming.exclusive.radio/er/moby/icecast.audio
-Movie &  TV Themes,http://streaming.exclusive.radio/er/movieandtvthemes/icecast.audio
-New Order,http://streaming.exclusive.radio/er/neworder/icecast.audio
-Olivia Newton John,http://streaming.exclusive.radio/er/onj/icecast.audio
-Patsy Cline,http://streaming.exclusive.radio/er/patsycline/icecast.audio
-Patti Smith,http://streaming.exclusive.radio/er/pattismith/icecast.audio
-Perry Como,http://streaming.exclusive.radio/er/perrycomo/icecast.audio
-Peter Frampton,http://streaming.exclusive.radio/er/peterframpton/icecast.audio
-Pop Princesses,http://streaming.exclusive.radio/er/popprincesses/icecast.audio
-Ralph Vaughan Williams,http://streaming.exclusive.radio/er/ralphvaughanwilliams/icecast.audio
-Rat Pack,http://streaming.exclusive.radio/er/ratpack/icecast.audio
-Run-DMC,http://streaming.exclusive.radio/er/rundmc/icecast.audio
-Rush,http://streaming.exclusive.radio/er/rush/icecast.audio
-Scorpions,http://streaming.exclusive.radio/er/scorpions/icecast.audio
-Sheryl Crow,http://streaming.exclusive.radio/er/sherylcrow/icecast.audio
-Sia,http://streaming.exclusive.radio/er/sia/icecast.audio
-Small Faces,http://streaming.exclusive.radio/er/smallfaces/icecast.audio
-Snow Patrol,http://streaming.exclusive.radio/er/snowpatrol/icecast.audio
-Soul Royalty,http://streaming.exclusive.radio/er/soulroyalty/icecast.audio
-Suzanne Vega,http://streaming.exclusive.radio/er/suzannevega/icecast.audio
-Tears For Fears,http://streaming.exclusive.radio/er/tearsforfears/icecast.audio
-Texas,http://streaming.exclusive.radio/er/texas/icecast.audio
-The Cure,http://streaming.exclusive.radio/er/thecure/icecast.audio
-The Mavericks,http://streaming.exclusive.radio/er/themavericks/icecast.audio
-The White Stripes,http://streaming.exclusive.radio/er/whitestripes/icecast.audio
-Toto,http://streaming.exclusive.radio/er/toto/icecast.audio
-Travis Scott,http://streaming.exclusive.radio/er/travisscott/icecast.audio
-UB40,http://streaming.exclusive.radio/er/ub40/icecast.audio
-West Coast,http://streaming.exclusive.radio/er/westcoast/icecast.audio
-Whitesnake,http://streaming.exclusive.radio/er/whitesnake/icecast.audio
-Yes,http://streaming.exclusive.radio/er/yes/icecast.audio
--- Exclusive Radio Country --
-Country,http://streaming.exclusive.radio/er/country/icecast.audio
-Alabama,http://streaming.exclusive.radio/er/alabama/icecast.audio
-Carrie Underwood,http://streaming.exclusive.radio/er/carrieunderwood/icecast.audio
-Charley Pride,http://streaming.exclusive.radio/er/charleypride/icecast.audio
-Chicks,http://streaming.exclusive.radio/er/dixiechicks/icecast.audio
-Dolly Parton,http://streaming.exclusive.radio/er/dollyparton/icecast.audio
-Garth Brooks,http://streaming.exclusive.radio/er/garthbrooks/icecast.audio
-George Jones,http://streaming.exclusive.radio/er/georgejones/icecast.audio
-George Strait,http://streaming.exclusive.radio/er/georgestrait/icecast.audio
-Glen Campbell,http://streaming.exclusive.radio/er/glencampbell/icecast.audio
-Gretchen Peters,http://streaming.exclusive.radio/er/gretchenpeters/icecast.audio
-Hank Williams,http://streaming.exclusive.radio/er/hankwilliams/icecast.audio
-Jerry Lee Lewis,http://streaming.exclusive.radio/er/jerryleelewis/icecast.audio
-Jim Reeves,http://streaming.exclusive.radio/er/jimreeves/icecast.audio
-John Denver,http://streaming.exclusive.radio/er/johndenver/icecast.audio
-Johnny Cash,http://streaming.exclusive.radio/er/johnnycash/icecast.audio
-Keith Urban,http://streaming.exclusive.radio/er/keithurban/icecast.audio
-Kenny Chesney,http://streaming.exclusive.radio/er/kennychesney/icecast.audio
-Kenny Rogers,http://streaming.exclusive.radio/er/kennyrogers/icecast.audio
-Lady A,http://streaming.exclusive.radio/er/ladyantebellum/icecast.audio
-Loretta Lynn,http://streaming.exclusive.radio/er/lorettalynn/icecast.audio
-Merle Haggard,http://streaming.exclusive.radio/er/merlehaggard/icecast.audio
-Patsy Cline,http://streaming.exclusive.radio/er/patsycline/icecast.audio
-Randy Travis,http://streaming.exclusive.radio/er/randytravis/icecast.audio
-Reba McEntire,http://streaming.exclusive.radio/er/rebamcentire/icecast.audio
-Shania Twain,http://streaming.exclusive.radio/er/shaniatwain/icecast.audio
-Tammy Wynette,http://streaming.exclusive.radio/er/tammywynette/icecast.audio
-The Mavericks,http://streaming.exclusive.radio/er/themavericks/icecast.audio
-Tim McGraw,http://streaming.exclusive.radio/er/timmcgraw/icecast.audio
-Waylon Jennings,http://streaming.exclusive.radio/er/waylonjennings/icecast.audio
-Willie Nelson,http://streaming.exclusive.radio/er/willienelson/icecast.audio
--- Exclusive Radio Blues --
-Blues,http://streaming.exclusive.radio/er/blues/icecast.audio
-Albert Collins,http://streaming.exclusive.radio/er/albertcollins/icecast.audio
-B.B. King,http://streaming.exclusive.radio/er/bbking/icecast.audio
-Buddy Guy,http://streaming.exclusive.radio/er/buddyguy/icecast.audio
-Derek Trucks and Susan Tedeschi,http://streaming.exclusive.radio/er/derekandsusantrucks/icecast.audio
-Eric Clapton,http://streaming.exclusive.radio/er/ericclapton/icecast.audio
-Etta James,http://streaming.exclusive.radio/er/ettajames/icecast.audio
-J J Cale,http://streaming.exclusive.radio/er/jjcale/icecast.audio
-Jimmy Rogers,http://streaming.exclusive.radio/er/jimmyrogers/icecast.audio
-Joe Bonamassa,http://streaming.exclusive.radio/er/joebonamassa/icecast.audio
-John Lee Hooker,http://streaming.exclusive.radio/er/johnleehooker/icecast.audio
-John Mayall,http://streaming.exclusive.radio/er/johnmayall/icecast.audio
-Johnny Winter,http://streaming.exclusive.radio/er/johnnywinter/icecast.audio
-Muddy Waters,http://streaming.exclusive.radio/er/muddywaters/icecast.audio
-Peter Green's Fleetwood Mac,http://streaming.exclusive.radio/er/pgfleetwood/icecast.audio
-Robert Cray,http://streaming.exclusive.radio/er/robertcray/icecast.audio
-Rory Gallagher,http://streaming.exclusive.radio/er/rorygallagher/icecast.audio
-Stevie Ray Vaughan,http://streaming.exclusive.radio/er/stevierayvaughan/icecast.audio
-The Allman Brothers Band,http://streaming.exclusive.radio/er/allmanbrothers/icecast.audio
-The Yardbirds,http://streaming.exclusive.radio/er/theyardbirds/icecast.audio
-Van Morrison,http://streaming.exclusive.radio/er/vanmorrison/icecast.audio
--- Exclusive Radio Soul --
-Motown,http://streaming.exclusive.radio/er/motown/icecast.audio
-Soul,http://streaming.exclusive.radio/er/soul/icecast.audio
-Al Green,http://streaming.exclusive.radio/er/algreen/icecast.audio
-Aretha Franklin,http://streaming.exclusive.radio/er/arethafranklin/icecast.audio
-Barry White,http://streaming.exclusive.radio/er/barrywhite/icecast.audio
-Bill Withers,http://streaming.exclusive.radio/er/billwithers/icecast.audio
-Booker T &  The MG's,http://streaming.exclusive.radio/er/bookert/icecast.audio
-Chic,http://streaming.exclusive.radio/er/chic/icecast.audio
-Curtis Mayfield,http://streaming.exclusive.radio/er/curtismayfield/icecast.audio
-Diana Ross,http://streaming.exclusive.radio/er/dianaross/icecast.audio
-Earth, Wind &  Fire,http://streaming.exclusive.radio/er/earthwindandfire/icecast.audio
-James Brown,http://streaming.exclusive.radio/er/jamesbrown/icecast.audio
-Janet Jackson,http://streaming.exclusive.radio/er/janetjackson/icecast.audio
-Lionel Richie,http://streaming.exclusive.radio/er/lionelrichie/icecast.audio
-Marvin Gaye,http://streaming.exclusive.radio/er/marvingaye/icecast.audio
-Mary J. Blige,http://streaming.exclusive.radio/er/maryjblige/icecast.audio
-Otis Redding,http://streaming.exclusive.radio/er/otisredding/icecast.audio
-Sam Cooke,http://streaming.exclusive.radio/er/samcooke/icecast.audio
-Sly and The Family Stone,http://streaming.exclusive.radio/er/slyandthefamilystone/icecast.audio
-Smokey Robinson,http://streaming.exclusive.radio/er/smokeyrobinson/icecast.audio
-Stevie Wonder,http://streaming.exclusive.radio/er/steviewonder/icecast.audio
-The Drifters,http://streaming.exclusive.radio/er/drifters/icecast.audio
-The Four Tops,http://streaming.exclusive.radio/er/fourtops/icecast.audio
-The Temptations,http://streaming.exclusive.radio/er/thetemptations/icecast.audio
--- Exclusive Radio Easy --
-Easy,http://streaming.exclusive.radio/er/easy/icecast.audio
-Andy Williams,http://streaming.exclusive.radio/er/andywilliams/icecast.audio
-Barbra Streisand,http://streaming.exclusive.radio/er/streisand/icecast.audio
-Barry Manilow,http://streaming.exclusive.radio/er/barrymanilow/icecast.audio
-Bette Midler,http://streaming.exclusive.radio/er/bettemidler/icecast.audio
-Bread,http://streaming.exclusive.radio/er/bread/icecast.audio
-Carly Simon,http://streaming.exclusive.radio/er/carlysimon/icecast.audio
-Carole King,http://streaming.exclusive.radio/er/caroleking/icecast.audio
-Celine Dion,http://streaming.exclusive.radio/er/celinedion/icecast.audio
-David Soul,http://streaming.exclusive.radio/er/davidsoul/icecast.audio
-Dean Martin,http://streaming.exclusive.radio/er/deanmartin/icecast.audio
-Dionne Warwick,http://streaming.exclusive.radio/er/dionnewarwick/icecast.audio
-Ella Fitzgerald,http://streaming.exclusive.radio/er/ellafitzgerald/icecast.audio
-Engelbert Humperdinck,http://streaming.exclusive.radio/er/engelberthumperdinck/icecast.audio
-Eva Cassidy,http://streaming.exclusive.radio/er/evacassidy/icecast.audio
-Frank Sinatra,http://streaming.exclusive.radio/er/franksinatra/icecast.audio
-Glen Campbell,http://streaming.exclusive.radio/er/glencampbell/icecast.audio
-Jack Johnson,http://streaming.exclusive.radio/er/jackjohnson/icecast.audio
-James Taylor,http://streaming.exclusive.radio/er/jamestaylor/icecast.audio
-Jim Reeves,http://streaming.exclusive.radio/er/jimreeves/icecast.audio
-John Denver,http://streaming.exclusive.radio/er/johndenver/icecast.audio
-Johnny Mathis,http://streaming.exclusive.radio/er/johnnymathis/icecast.audio
-Matt Monro,http://streaming.exclusive.radio/er/mattmonro/icecast.audio
-Michael Buble,http://streaming.exclusive.radio/er/michaelbuble/icecast.audio
-Nat King Cole,http://streaming.exclusive.radio/er/natkingcole/icecast.audio
-Neil Diamond,http://streaming.exclusive.radio/er/neildiamond/icecast.audio
-Perry Como,http://streaming.exclusive.radio/er/perrycomo/icecast.audio
-The Carpenters,http://streaming.exclusive.radio/er/carpenters/icecast.audio
-Tom Jones,http://streaming.exclusive.radio/er/tomjones/icecast.audio
-Tony Bennett,http://streaming.exclusive.radio/er/tonybennett/icecast.audio
+10cc,https://streaming.exclusive.radio/er-app/10cc/icecast.audio
+A-Ha,https://streaming.exclusive.radio/er-app/aha/icecast.audio
+ABBA,https://streaming.exclusive.radio/er-app/abba/icecast.audio
+Alice Cooper,https://streaming.exclusive.radio/er-app/alicecooper/icecast.audio
+Alison Moyet,https://streaming.exclusive.radio/er-app/alisonmoyet/icecast.audio
+Annie Lennox,https://streaming.exclusive.radio/er-app/annielennox/icecast.audio
+Backstreet Boys,https://streaming.exclusive.radio/er-app/backstreetboys/icecast.audio
+Barry Manilow,https://streaming.exclusive.radio/er-app/barrymanilow/icecast.audio
+Belinda Carlisle,https://streaming.exclusive.radio/er-app/belindacarlisle/icecast.audio
+Billy Joel,https://streaming.exclusive.radio/er-app/billyjoel/icecast.audio
+Blondie,https://streaming.exclusive.radio/er-app/blondie/icecast.audio
+Blur,https://streaming.exclusive.radio/er-app/blur/icecast.audio
+Bob Marley,https://streaming.exclusive.radio/er-app/bobmarley/icecast.audio
+Bryan Ferry,https://streaming.exclusive.radio/er-app/bryanferry/icecast.audio
+Buddy Holly,https://streaming.exclusive.radio/er-app/buddyholly/icecast.audio
+Cat Stevens,https://streaming.exclusive.radio/er-app/catstevens/icecast.audio
+Cher,https://streaming.exclusive.radio/er-app/cher/icecast.audio
+Chuck Berry,https://streaming.exclusive.radio/er-app/chuckberry/icecast.audio
+Cliff Richard,https://streaming.exclusive.radio/er-app/cliffrichard/icecast.audio
+Crowded House,https://streaming.exclusive.radio/er-app/crowdedhouse/icecast.audio
+Depeche Mode,https://streaming.exclusive.radio/er-app/depechemode/icecast.audio
+Diana Ross,https://streaming.exclusive.radio/er-app/dianaross/icecast.audio
+Donna Summer,https://streaming.exclusive.radio/er-app/donnasummer/icecast.audio
+Duran Duran,https://streaming.exclusive.radio/er-app/duranduran/icecast.audio
+Elbow,https://streaming.exclusive.radio/er-app/elbow/icecast.audio
+Electric Light Orchestra,https://streaming.exclusive.radio/er-app/elo/icecast.audio
+Elton John,https://streaming.exclusive.radio/er-app/eltonjohn/icecast.audio
+Elvis Costello,https://streaming.exclusive.radio/er-app/elviscostello/icecast.audio
+Elvis Presley,https://streaming.exclusive.radio/er-app/elvispresley/icecast.audio
+Erasure,https://streaming.exclusive.radio/er-app/erasure/icecast.audio
+Eric Clapton,https://streaming.exclusive.radio/er-app/ericclapton/icecast.audio
+Eurythmics,https://streaming.exclusive.radio/er-app/eurythmics/icecast.audio
+Fats Domino,https://streaming.exclusive.radio/er-app/fatsdomino/icecast.audio
+Frank Sinatra,https://streaming.exclusive.radio/er-app/franksinatra/icecast.audio
+Frankie Valli  and  The Four Seasons,https://streaming.exclusive.radio/er-app/frankievalli/icecast.audio
+George Benson,https://streaming.exclusive.radio/er-app/georgebenson/icecast.audio
+George Harrison,https://streaming.exclusive.radio/er-app/georgeharrison/icecast.audio
+George Michael,https://streaming.exclusive.radio/er-app/georgemichael/icecast.audio
+Gloria Estefan,https://streaming.exclusive.radio/er-app/gloriaestefan/icecast.audio
+Hall  and  Oates,https://streaming.exclusive.radio/er-app/hallandoates/icecast.audio
+Jackie Wilson,https://streaming.exclusive.radio/er-app/jackiewilson/icecast.audio
+Jackson Browne,https://streaming.exclusive.radio/er-app/jacksonbrowne/icecast.audio
+Jason Donovan,https://streaming.exclusive.radio/er-app/jasondonovan/icecast.audio
+Jerry Lee Lewis,https://streaming.exclusive.radio/er-app/jerryleelewis/icecast.audio
+John Legend,https://streaming.exclusive.radio/er-app/johnlegend/icecast.audio
+John Lennon,https://streaming.exclusive.radio/er-app/lennon/icecast.audio
+Johnny Cash,https://streaming.exclusive.radio/er-app/johnnycash/icecast.audio
+Johnny Nash,https://streaming.exclusive.radio/er-app/johnnynash/icecast.audio
+Kate Bush,https://streaming.exclusive.radio/er-app/katebush/icecast.audio
+Keane,https://streaming.exclusive.radio/er-app/keane/icecast.audio
+Kenny Rogers,https://streaming.exclusive.radio/er-app/kennyrogers/icecast.audio
+Kylie Minogue,https://streaming.exclusive.radio/er-app/kylie/icecast.audio
+Little Richard,https://streaming.exclusive.radio/er-app/littlerichard/icecast.audio
+Madonna,https://streaming.exclusive.radio/er-app/madonna/icecast.audio
+Manic Street Preachers,https://streaming.exclusive.radio/er-app/manicstreetpreachers/icecast.audio
+Mariah Carey,https://streaming.exclusive.radio/er-app/mariahcarey/icecast.audio
+Michael Jackson,https://streaming.exclusive.radio/er-app/michaeljackson/icecast.audio
+Moby,https://streaming.exclusive.radio/er-app/moby/icecast.audio
+New Order,https://streaming.exclusive.radio/er-app/neworder/icecast.audio
+Nina Simone,https://streaming.exclusive.radio/er-app/ninasimone/icecast.audio
+Oasis,https://streaming.exclusive.radio/er-app/oasis/icecast.audio
+Olivia Newton John,https://streaming.exclusive.radio/er-app/onj/icecast.audio
+Paul McCartney,https://streaming.exclusive.radio/er-app/paulmccartney/icecast.audio
+Pet Shop Boys,https://streaming.exclusive.radio/er-app/petshopboys/icecast.audio
+Phil Collins,https://streaming.exclusive.radio/er-app/philcollins/icecast.audio
+Prince,https://streaming.exclusive.radio/er-app/prince/icecast.audio
+Queen,https://streaming.exclusive.radio/er-app/queen/icecast.audio
+Ramones,https://streaming.exclusive.radio/er-app/ramones/icecast.audio
+Ray Charles,https://streaming.exclusive.radio/er-app/raycharles/icecast.audio
+Rod Stewart,https://streaming.exclusive.radio/er-app/rodstewart/icecast.audio
+Roxette,https://streaming.exclusive.radio/er-app/roxette/icecast.audio
+Roy Orbison,https://streaming.exclusive.radio/er-app/royorbison/icecast.audio
+Savage Garden,https://streaming.exclusive.radio/er-app/savagegarden/icecast.audio
+Simon  and  Garfunkel,https://streaming.exclusive.radio/er-app/simongarfunkle/icecast.audio
+Small Faces,https://streaming.exclusive.radio/er-app/smallfaces/icecast.audio
+Snow Patrol,https://streaming.exclusive.radio/er-app/snowpatrol/icecast.audio
+Spandau Ballet,https://streaming.exclusive.radio/er-app/spandauballet/icecast.audio
+Sting,https://streaming.exclusive.radio/er-app/sting/icecast.audio
+Suzanne Vega,https://streaming.exclusive.radio/er-app/suzannevega/icecast.audio
+T-Rex,https://streaming.exclusive.radio/er-app/trex/icecast.audio
+Take That,https://streaming.exclusive.radio/er-app/takethat/icecast.audio
+Talking Heads,https://streaming.exclusive.radio/er-app/talkingheads/icecast.audio
+Tears For Fears,https://streaming.exclusive.radio/er-app/tearsforfears/icecast.audio
+Texas,https://streaming.exclusive.radio/er-app/texas/icecast.audio
+The B-52's,https://streaming.exclusive.radio/er-app/theb52s/icecast.audio
+The Beach Boys,https://streaming.exclusive.radio/er-app/beachboys/icecast.audio
+The Beatles,https://streaming.exclusive.radio/er-app/beatles/icecast.audio
+The Bee Gees,https://streaming.exclusive.radio/er-app/beegees/icecast.audio
+The Byrds,https://streaming.exclusive.radio/er-app/thebyrds/icecast.audio
+The Cars,https://streaming.exclusive.radio/er-app/thecars/icecast.audio
+The Clash,https://streaming.exclusive.radio/er-app/theclash/icecast.audio
+The Cure,https://streaming.exclusive.radio/er-app/thecure/icecast.audio
+The Everly Brothers,https://streaming.exclusive.radio/er-app/everlybrothers/icecast.audio
+The Human League,https://streaming.exclusive.radio/er-app/humanleague/icecast.audio
+The Kinks,https://streaming.exclusive.radio/er-app/thekinks/icecast.audio
+The Monkees,https://streaming.exclusive.radio/er-app/themonkees/icecast.audio
+The Police,https://streaming.exclusive.radio/er-app/police/icecast.audio
+The Pretenders,https://streaming.exclusive.radio/er-app/pretenders/icecast.audio
+The Rolling Stones,https://streaming.exclusive.radio/er-app/rollingstones/icecast.audio
+The Shirelles,https://streaming.exclusive.radio/er-app/theshirelles/icecast.audio
+Tina Turner,https://streaming.exclusive.radio/er-app/tinaturner/icecast.audio
+Tom Jones,https://streaming.exclusive.radio/er-app/tomjones/icecast.audio
+Tom Petty,https://streaming.exclusive.radio/er-app/tompetty/icecast.audio
+Tony Bennett,https://streaming.exclusive.radio/er-app/tonybennett/icecast.audio
+Toots And The Maytals,https://streaming.exclusive.radio/er-app/tootsandthemaytals/icecast.audio
+UB40,https://streaming.exclusive.radio/er-app/ub40/icecast.audio
+Van Morrison,https://streaming.exclusive.radio/er-app/vanmorrison/icecast.audio
+Wham!,https://streaming.exclusive.radio/er-app/wham/icecast.audio
+Whitney Houston,https://streaming.exclusive.radio/er-app/whitneyhouston/icecast.audio
+-- Exclusive Radio Decades --
+Cruisin' 50's,https://streaming.exclusive.radio/er-app/cruisin50s/icecast.audio
+Cruisin' 60's,https://streaming.exclusive.radio/er-app/cruisin60s/icecast.audio
+20's,https://streaming.exclusive.radio/er-app/1920/icecast.audio
+30's,https://streaming.exclusive.radio/er-app/1930/icecast.audio
+40's,https://streaming.exclusive.radio/er-app/1940/icecast.audio
+50's,https://streaming.exclusive.radio/er-app/50s/icecast.audio
+60's,https://streaming.exclusive.radio/er-app/60s/icecast.audio
+70's,https://streaming.exclusive.radio/er-app/70s/icecast.audio
+80's,https://streaming.exclusive.radio/er-app/80s/icecast.audio
+90's,https://streaming.exclusive.radio/er-app/90s/icecast.audio
+00's,https://streaming.exclusive.radio/er-app/00s/icecast.audio
+2010's,https://streaming.exclusive.radio/er-app/10s/icecast.audio
+-- Exclusive Radio Rock --
+AC/DC,https://streaming.exclusive.radio/er-app/acdc/icecast.audio
+Aerosmith,https://streaming.exclusive.radio/er-app/aerosmith/icecast.audio
+Black Sabbath,https://streaming.exclusive.radio/er-app/blacksabbath/icecast.audio
+Bon Jovi,https://streaming.exclusive.radio/er-app/bonjovi/icecast.audio
+Cheap Trick,https://streaming.exclusive.radio/er-app/cheaptrick/icecast.audio
+Deep Purple,https://streaming.exclusive.radio/er-app/deeppurple/icecast.audio
+Def Leppard,https://streaming.exclusive.radio/er-app/defleppard/icecast.audio
+Foo Fighters,https://streaming.exclusive.radio/er-app/foofighters/icecast.audio
+Green Day,https://streaming.exclusive.radio/er-app/greenday/icecast.audio
+Guns N' Roses,https://streaming.exclusive.radio/er-app/gunsnroses/icecast.audio
+Iron Maiden,https://streaming.exclusive.radio/er-app/ironmaiden/icecast.audio
+Jimi Hendrix,https://streaming.exclusive.radio/er-app/hendrix/icecast.audio
+Joan Jett,https://streaming.exclusive.radio/er-app/joanjett/icecast.audio
+Joe Satriani,https://streaming.exclusive.radio/er-app/joesatriani/icecast.audio
+Johnny Winter,https://streaming.exclusive.radio/er-app/johnnywinter/icecast.audio
+KISS,https://streaming.exclusive.radio/er-app/kiss/icecast.audio
+Led Zeppelin,https://streaming.exclusive.radio/er-app/ledzeppelin/icecast.audio
+Metallica,https://streaming.exclusive.radio/er-app/metallica/icecast.audio
+Nickelback,https://streaming.exclusive.radio/er-app/nickelback/icecast.audio
+Nirvana,https://streaming.exclusive.radio/er-app/nirvana/icecast.audio
+Red Hot Chili Peppers,https://streaming.exclusive.radio/er-app/chilipeppers/icecast.audio
+Rory Gallagher,https://streaming.exclusive.radio/er-app/rorygallagher/icecast.audio
+Rush,https://streaming.exclusive.radio/er-app/rush/icecast.audio
+Scorpions,https://streaming.exclusive.radio/er-app/scorpions/icecast.audio
+Simple Minds,https://streaming.exclusive.radio/er-app/simpleminds/icecast.audio
+Stone Temple Pilots,https://streaming.exclusive.radio/er-app/stonetemplepilots/icecast.audio
+The Black Crowes,https://streaming.exclusive.radio/er-app/theblackcrowes/icecast.audio
+The Who,https://streaming.exclusive.radio/er-app/thewho/icecast.audio
+Thin Lizzy,https://streaming.exclusive.radio/er-app/thinlizzy/icecast.audio
+U2,https://streaming.exclusive.radio/er-app/u2/icecast.audio
+Van Halen,https://streaming.exclusive.radio/er-app/vanhalen/icecast.audio
+Whitesnake,https://streaming.exclusive.radio/er-app/whitesnake/icecast.audio
+ZZ Top,https://streaming.exclusive.radio/er-app/zztop/icecast.audio
+-- Exclusive Radio Soul and Motown --
+Al Green,https://streaming.exclusive.radio/er-app/algreen/icecast.audio
+Aretha Franklin,https://streaming.exclusive.radio/er-app/arethafranklin/icecast.audio
+Barry White,https://streaming.exclusive.radio/er-app/barrywhite/icecast.audio
+Bill Withers,https://streaming.exclusive.radio/er-app/billwithers/icecast.audio
+Booker T  and  The MG's,https://streaming.exclusive.radio/er-app/bookert/icecast.audio
+Chic,https://streaming.exclusive.radio/er-app/chic/icecast.audio
+Curtis Mayfield,https://streaming.exclusive.radio/er-app/curtismayfield/icecast.audio
+Earth  Wind  and  Fire,https://streaming.exclusive.radio/er-app/earthwindandfire/icecast.audio
+James Brown,https://streaming.exclusive.radio/er-app/jamesbrown/icecast.audio
+Janet Jackson,https://streaming.exclusive.radio/er-app/janetjackson/icecast.audio
+Lionel Richie,https://streaming.exclusive.radio/er-app/lionelrichie/icecast.audio
+Marvin Gaye,https://streaming.exclusive.radio/er-app/marvingaye/icecast.audio
+Mary J. Blige,https://streaming.exclusive.radio/er-app/maryjblige/icecast.audio
+Otis Redding,https://streaming.exclusive.radio/er-app/otisredding/icecast.audio
+Sam Cooke,https://streaming.exclusive.radio/er-app/samcooke/icecast.audio
+Sly and The Family Stone,https://streaming.exclusive.radio/er-app/slyandthefamilystone/icecast.audio
+Smokey Robinson,https://streaming.exclusive.radio/er-app/smokeyrobinson/icecast.audio
+Stevie Wonder,https://streaming.exclusive.radio/er-app/steviewonder/icecast.audio
+The Drifters,https://streaming.exclusive.radio/er-app/drifters/icecast.audio
+The Four Tops,https://streaming.exclusive.radio/er-app/fourtops/icecast.audio
+The Temptations,https://streaming.exclusive.radio/er-app/thetemptations/icecast.audio
 -- Exclusive Radio Jazz --
-Jazz,http://streaming.exclusive.radio/er/jazz/icecast.audio
-Al Jarreau,http://streaming.exclusive.radio/er/aljarreau/icecast.audio
-Amy Winehouse,http://streaming.exclusive.radio/er/amywinehouse/icecast.audio
-Charlie Parker,http://streaming.exclusive.radio/er/charlieparker/icecast.audio
-Count Basie,http://streaming.exclusive.radio/er/countbasie/icecast.audio
-Dave Brubeck,http://streaming.exclusive.radio/er/davebrubeck/icecast.audio
-Diana Krall,http://streaming.exclusive.radio/er/dianakrall/icecast.audio
-Dizzy Gillespie,http://streaming.exclusive.radio/er/dizzygillespie/icecast.audio
-Duke Ellington,http://streaming.exclusive.radio/er/dukeellington/icecast.audio
-Ella Fitzgerald,http://streaming.exclusive.radio/er/ellafitzgerald/icecast.audio
-Fats Waller,http://streaming.exclusive.radio/er/fatswaller/icecast.audio
-Frank Sinatra,http://streaming.exclusive.radio/er/franksinatra/icecast.audio
-George Benson,http://streaming.exclusive.radio/er/georgebenson/icecast.audio
-Glenn Miller,http://streaming.exclusive.radio/er/glennmiller/icecast.audio
-Gregory Porter,http://streaming.exclusive.radio/er/gregoryporter/icecast.audio
-Harry Connick Jr.,http://streaming.exclusive.radio/er/harryconnick/icecast.audio
-Herbie Hancock,http://streaming.exclusive.radio/er/herbiehancock/icecast.audio
-Jamie Cullum,http://streaming.exclusive.radio/er/jamiecullum/icecast.audio
-Jaques Loussier,http://streaming.exclusive.radio/er/jaquesloussier/icecast.audio
-John Coltrane,http://streaming.exclusive.radio/er/johncoltrane/icecast.audio
-Louis Armstrong,http://streaming.exclusive.radio/er/louisarmstrong/icecast.audio
-Michael Buble,http://streaming.exclusive.radio/er/michaelbuble/icecast.audio
-Miles Davis,http://streaming.exclusive.radio/er/milesdavis/icecast.audio
-Nina Simone,http://streaming.exclusive.radio/er/ninasimone/icecast.audio
-Norah Jones,http://streaming.exclusive.radio/er/norahjones/icecast.audio
-Oscar Peterson,http://streaming.exclusive.radio/er/oscarpeterson/icecast.audio
-Stephane Grappelli,http://streaming.exclusive.radio/er/stephanegrappelli/icecast.audio
--- Exclusive Radio RNB --
-RnB,http://streaming.exclusive.radio/er/rnb/icecast.audio
-50 Cent,http://streaming.exclusive.radio/er/50cent/icecast.audio
-Beastie Boys,http://streaming.exclusive.radio/er/beastieboys/icecast.audio
-Dr. Dre,http://streaming.exclusive.radio/er/drdre/icecast.audio
-Drake,http://streaming.exclusive.radio/er/drake/icecast.audio
-Eminem,http://streaming.exclusive.radio/er/eminem/icecast.audio
-JAY-Z,http://streaming.exclusive.radio/er/jay-z/icecast.audio
-Kanye West,http://streaming.exclusive.radio/er/kanyewest/icecast.audio
-Kendrick Lamar,http://streaming.exclusive.radio/er/kendricklamar/icecast.audio
-Nicki Minaj,http://streaming.exclusive.radio/er/nickiminaj/icecast.audio
-Post Malone,http://streaming.exclusive.radio/er/postmalone/icecast.audio
-Run-DMC,http://streaming.exclusive.radio/er/rundmc/icecast.audio
-Stormzy,http://streaming.exclusive.radio/er/stormzy/icecast.audio
-The Weeknd,http://streaming.exclusive.radio/er/theweeknd/icecast.audio
-Tinie Tempah,http://streaming.exclusive.radio/er/tinietempah/icecast.audio
-Travis Scott,http://streaming.exclusive.radio/er/travisscott/icecast.audio
-will.i.am,http://streaming.exclusive.radio/er/william/icecast.audio
--- Exclusive Radio Chart --
-Chart,http://streaming.exclusive.radio/er/chart/icecast.audio
-Glastonbury 2020,http://streaming.exclusive.radio/er/glastonbury/icecast.audio
-Adam Lambert,http://streaming.exclusive.radio/er/adamlambert/icecast.audio
-Adele,http://streaming.exclusive.radio/er/adele/icecast.audio
-Afrobeats,http://streaming.exclusive.radio/er/afrobeats/icecast.audio
-Ariana Grande,http://streaming.exclusive.radio/er/arianagrande/icecast.audio
-Avicii,http://streaming.exclusive.radio/er/avicii/icecast.audio
-Beyonce,http://streaming.exclusive.radio/er/beyonce/icecast.audio
-Bieber,http://streaming.exclusive.radio/er/justinbieber/icecast.audio
-Billie Eilish,http://streaming.exclusive.radio/er/billyeilish/icecast.audio
-Britney Spears,http://streaming.exclusive.radio/er/britney/icecast.audio
-Bruno Mars,http://streaming.exclusive.radio/er/brunomars/icecast.audio
-Calvin Harris,http://streaming.exclusive.radio/er/calvinharris/icecast.audio
-Camilla Cabello,http://streaming.exclusive.radio/er/camilacabello/icecast.audio
-Cardi B,http://streaming.exclusive.radio/er/cardib/icecast.audio
-Daft Punk,http://streaming.exclusive.radio/er/daftpunk/icecast.audio
-Drake,http://streaming.exclusive.radio/er/drake/icecast.audio
-Dua Lipa,http://streaming.exclusive.radio/er/dualipa/icecast.audio
-Ed Sheeran,http://streaming.exclusive.radio/er/edsheeran/icecast.audio
-Ellie Goulding,http://streaming.exclusive.radio/er/elliegoulding/icecast.audio
-Enrique Iglesias,http://streaming.exclusive.radio/er/enriqueiglesias/icecast.audio
-Freya Ridings,http://streaming.exclusive.radio/er/freyaridings/icecast.audio
-George Ezra,http://streaming.exclusive.radio/er/georgeezra/icecast.audio
-Grace VanderWaal,http://streaming.exclusive.radio/er/gracevanderwaal/icecast.audio
-Gregory Porter,http://streaming.exclusive.radio/er/gregoryporter/icecast.audio
-Harry Styles,http://streaming.exclusive.radio/er/harrystyles/icecast.audio
-Imagine Dragons,http://streaming.exclusive.radio/er/imaginedragons/icecast.audio
-James Blunt,http://streaming.exclusive.radio/er/jamesblunt/icecast.audio
-Jennifer Lopez,http://streaming.exclusive.radio/er/jenniferlopez/icecast.audio
-Joji,http://streaming.exclusive.radio/er/joji/icecast.audio
-Jonas Brothers,http://streaming.exclusive.radio/er/jonasbrothers/icecast.audio
-Justin Timberlake,http://streaming.exclusive.radio/er/justintimberlake/icecast.audio
-Katy Perry,http://streaming.exclusive.radio/er/katyperry/icecast.audio
-Kelly Clarkson,http://streaming.exclusive.radio/er/kellyclarkson/icecast.audio
-Kendrick Lamar,http://streaming.exclusive.radio/er/kendricklamar/icecast.audio
-Lady Gaga,http://streaming.exclusive.radio/er/ladygaga/icecast.audio
-Lewis Capaldi,http://streaming.exclusive.radio/er/lewiscapaldi/icecast.audio
-Little Mix,http://streaming.exclusive.radio/er/littlemix/icecast.audio
-Lizzo,http://streaming.exclusive.radio/er/lizzo/icecast.audio
-Lorde,http://streaming.exclusive.radio/er/lorde/icecast.audio
-Mabel,http://streaming.exclusive.radio/er/mabel/icecast.audio
-Maroon 5,http://streaming.exclusive.radio/er/maroon5/icecast.audio
-Michael Buble,http://streaming.exclusive.radio/er/michaelbuble/icecast.audio
-Michael Kiwanuka,http://streaming.exclusive.radio/er/michaelkiwanuka/icecast.audio
-Miley Cyrus,http://streaming.exclusive.radio/er/mileycyrus/icecast.audio
-Niall Horan,http://streaming.exclusive.radio/er/niallhoran/icecast.audio
-Nicki Minaj,http://streaming.exclusive.radio/er/nickiminaj/icecast.audio
-One Direction,http://streaming.exclusive.radio/er/onedirection/icecast.audio
-Paloma Faith,http://streaming.exclusive.radio/er/palomafaith/icecast.audio
-Pharrell Williams,http://streaming.exclusive.radio/er/pharrellwilliams/icecast.audio
-Pink,http://streaming.exclusive.radio/er/pink/icecast.audio
-Post Malone,http://streaming.exclusive.radio/er/postmalone/icecast.audio
-Pussycat Dolls,http://streaming.exclusive.radio/er/pussycatdolls/icecast.audio
-Rihanna,http://streaming.exclusive.radio/er/rihanna/icecast.audio
-Rita Ora,http://streaming.exclusive.radio/er/ritaora/icecast.audio
-Sam Smith,http://streaming.exclusive.radio/er/samsmith/icecast.audio
-Shakira,http://streaming.exclusive.radio/er/shakira/icecast.audio
-Shawn Mendes,http://streaming.exclusive.radio/er/shawnmendes/icecast.audio
-Sia,http://streaming.exclusive.radio/er/sia/icecast.audio
-Taylor Swift,http://streaming.exclusive.radio/er/taylorswift/icecast.audio
-The 1975,http://streaming.exclusive.radio/er/the1975/icecast.audio
-The Killers,http://streaming.exclusive.radio/er/thekillers/icecast.audio
-The Weeknd,http://streaming.exclusive.radio/er/theweeknd/icecast.audio
-Tinie Tempah,http://streaming.exclusive.radio/er/tinietempah/icecast.audio
-Travis Scott,http://streaming.exclusive.radio/er/travisscott/icecast.audio
-Twenty One Pilots,http://streaming.exclusive.radio/er/twentyonepilots/icecast.audio
-2020's,http://streaming.exclusive.radio/er/2020/icecast.audio
--- Exclusive Radio Party --
-Afrobeats,http://streaming.exclusive.radio/er/afrobeats/icecast.audio
-Avicii,http://streaming.exclusive.radio/er/avicii/icecast.audio
-Beach Party,http://streaming.exclusive.radio/er/beachparty/icecast.audio
-Calvin Harris,http://streaming.exclusive.radio/er/calvinharris/icecast.audio
-Club,http://streaming.exclusive.radio/er/club/icecast.audio
-Daft Punk,http://streaming.exclusive.radio/er/daftpunk/icecast.audio
-Dance Chill,http://streaming.exclusive.radio/er/chilldance/icecast.audio
-Disco,http://streaming.exclusive.radio/er/disco/icecast.audio
-Ibiza,http://streaming.exclusive.radio/er/ibiza/icecast.audio
-Ministry of Sound,http://streaming.exclusive.radio/er/ministryofsound/icecast.audio
-Party,http://streaming.exclusive.radio/er/party/icecast.audio
-Party Anthems,http://streaming.exclusive.radio/er/partyanthems/icecast.audio
-Rave,http://streaming.exclusive.radio/er/rave/icecast.audio
-Reggae Party,http://streaming.exclusive.radio/er/reggaeparty/icecast.audio
--- Exclusive Radio Classic --
-Classical,http://streaming.exclusive.radio/er/classical/icecast.audio
-Beethoven,http://streaming.exclusive.radio/er/beethoven/icecast.audio
-Brahms,http://streaming.exclusive.radio/er/brahms/icecast.audio
-Chopin,http://streaming.exclusive.radio/er/chopin/icecast.audio
-Debussy,http://streaming.exclusive.radio/er/debussy/icecast.audio
-Gershwin,http://streaming.exclusive.radio/er/gershwin/icecast.audio
-Handel,http://streaming.exclusive.radio/er/handel/icecast.audio
-J.S. Bach,http://streaming.exclusive.radio/er/jsbach/icecast.audio
-John Williams,http://streaming.exclusive.radio/er/johnwilliams/icecast.audio
-Liszt,http://streaming.exclusive.radio/er/liszt/icecast.audio
-Mozart,http://streaming.exclusive.radio/er/mozart/icecast.audio
-Ralph Vaughan Williams,http://streaming.exclusive.radio/er/ralphvaughanwilliams/icecast.audio
-Ravel,http://streaming.exclusive.radio/er/ravel/icecast.audio
-Schubert,http://streaming.exclusive.radio/er/schubert/icecast.audio
-Shostakovich,http://streaming.exclusive.radio/er/shostakovich/icecast.audio
-Sibelius,http://streaming.exclusive.radio/er/sibelius/icecast.audio
-Sleep-Classical,http://streaming.exclusive.radio/er/sleep-classical/icecast.audio
-Strauss,http://streaming.exclusive.radio/er/strauss/icecast.audio
-Stravinsky,http://streaming.exclusive.radio/er/stravinsky/icecast.audio
-Tchaikovsky,http://streaming.exclusive.radio/er/tchaikovsky/icecast.audio
-Verdi,http://streaming.exclusive.radio/er/verdi/icecast.audio
-Vivaldi,http://streaming.exclusive.radio/er/vivaldi/icecast.audio
--- Exclusive Radio International --
-Afrobeats,http://streaming.exclusive.radio/er/afrobeats/icecast.audio
-Bollywood,http://streaming.exclusive.radio/er/bollywood/icecast.audio
-Brazil,http://streaming.exclusive.radio/er/brazil/icecast.audio
-Deutsche Musik,http://streaming.exclusive.radio/er/deutschemusik/icecast.audio
-Italy,http://streaming.exclusive.radio/er/italy/icecast.audio
-J-Pop,http://streaming.exclusive.radio/er/jpop/icecast.audio
-K-Pop,http://streaming.exclusive.radio/er/kpop/icecast.audio
-Musique Francaise,http://streaming.exclusive.radio/er/musiquefrancaise/icecast.audio
-New Zealand,http://streaming.exclusive.radio/er/nzmusic/icecast.audio
+Al Jarreau,https://streaming.exclusive.radio/er-app/aljarreau/icecast.audio
+Amy Winehouse,https://streaming.exclusive.radio/er-app/amywinehouse/icecast.audio
+Charlie Parker,https://streaming.exclusive.radio/er-app/charlieparker/icecast.audio
+Count Basie,https://streaming.exclusive.radio/er-app/countbasie/icecast.audio
+Dave Brubeck,https://streaming.exclusive.radio/er-app/davebrubeck/icecast.audio
+Diana Krall,https://streaming.exclusive.radio/er-app/dianakrall/icecast.audio
+Dizzy Gillespie,https://streaming.exclusive.radio/er-app/dizzygillespie/icecast.audio
+Duke Ellington,https://streaming.exclusive.radio/er-app/dukeellington/icecast.audio
+Fats Waller,https://streaming.exclusive.radio/er-app/fatswaller/icecast.audio
+Gershwin,https://streaming.exclusive.radio/er-app/gershwin/icecast.audio
+Glenn Miller,https://streaming.exclusive.radio/er-app/glennmiller/icecast.audio
+Harry Connick Jr.,https://streaming.exclusive.radio/er-app/harryconnick/icecast.audio
+Herbie Hancock,https://streaming.exclusive.radio/er-app/herbiehancock/icecast.audio
+Jamie Cullum,https://streaming.exclusive.radio/er-app/jamiecullum/icecast.audio
+Jaques Loussier,https://streaming.exclusive.radio/er-app/jaquesloussier/icecast.audio
+John Coltrane,https://streaming.exclusive.radio/er-app/johncoltrane/icecast.audio
+Louis Armstrong,https://streaming.exclusive.radio/er-app/louisarmstrong/icecast.audio
+Miles Davis,https://streaming.exclusive.radio/er-app/milesdavis/icecast.audio
+Norah Jones,https://streaming.exclusive.radio/er-app/norahjones/icecast.audio
+Oscar Peterson,https://streaming.exclusive.radio/er-app/oscarpeterson/icecast.audio
+Stephane Grappelli,https://streaming.exclusive.radio/er-app/stephanegrappelli/icecast.audio
+-- Exclusive Radio Country --
+Alabama,https://streaming.exclusive.radio/er-app/alabama/icecast.audio
+Brooks & Dunn,https://streaming.exclusive.radio/er-app/brooksanddunn/icecast.audio
+Brantley Gilbert,https://streaming.exclusive.radio/er-app/brantleygilbert/icecast.audio
+Carrie Underwood,https://streaming.exclusive.radio/er-app/carrieunderwood/icecast.audio
+Charley Pride,https://streaming.exclusive.radio/er-app/charleypride/icecast.audio
+Chicks,https://streaming.exclusive.radio/er-app/dixiechicks/icecast.audio
+Colt Ford,https://streaming.exclusive.radio/er-app/coltford/icecast.audio
+Dallas Smith,https://streaming.exclusive.radio/er-app/dallassmith/icecast.audio
+Dolly Parton,https://streaming.exclusive.radio/er-app/dollyparton/icecast.audio
+Florida Georgia Line,https://streaming.exclusive.radio/er-app/floridageorgialine/icecast.audio
+Garth Brooks,https://streaming.exclusive.radio/er-app/garthbrooks/icecast.audio
+George Jones,https://streaming.exclusive.radio/er-app/georgejones/icecast.audio
+George Strait,https://streaming.exclusive.radio/er-app/georgestrait/icecast.audio
+Glen Campbell,https://streaming.exclusive.radio/er-app/glencampbell/icecast.audio
+Gretchen Peters,https://streaming.exclusive.radio/er-app/gretchenpeters/icecast.audio
+Hank Williams,https://streaming.exclusive.radio/er-app/hankwilliams/icecast.audio
+Jim Reeves,https://streaming.exclusive.radio/er-app/jimreeves/icecast.audio
+Keith Urban,https://streaming.exclusive.radio/er-app/keithurban/icecast.audio
+Kenny Chesney,https://streaming.exclusive.radio/er-app/kennychesney/icecast.audio
+Kiefer Sutherland,https://streaming.exclusive.radio/er-app/kiefersutherland/icecast.audio
+Kip Moore,https://streaming.exclusive.radio/er-app/kipmoore/icecast.audio
+Lady A,https://streaming.exclusive.radio/er-app/ladyantebellum/icecast.audio
+Loretta Lynn,https://streaming.exclusive.radio/er-app/lorettalynn/icecast.audio
+Luke Bryan,https://streaming.exclusive.radio/er-app/lukebryan/icecast.audio
+Merle Haggard,https://streaming.exclusive.radio/er-app/merlehaggard/icecast.audio
+Patsy Cline,https://streaming.exclusive.radio/er-app/patsycline/icecast.audio
+Randy Travis,https://streaming.exclusive.radio/er-app/randytravis/icecast.audio
+Reba McEntire,https://streaming.exclusive.radio/er-app/rebamcentire/icecast.audio
+Shania Twain,https://streaming.exclusive.radio/er-app/shaniatwain/icecast.audio
+Tammy Wynette,https://streaming.exclusive.radio/er-app/tammywynette/icecast.audio
+The Mavericks,https://streaming.exclusive.radio/er-app/themavericks/icecast.audio
+Tim McGraw,https://streaming.exclusive.radio/er-app/timmcgraw/icecast.audio
+Toby Keith,https://streaming.exclusive.radio/er-app/tobykeith/icecast.audio
+Waylon Jennings,https://streaming.exclusive.radio/er-app/waylonjennings/icecast.audio
+Willie Nelson,https://streaming.exclusive.radio/er-app/willienelson/icecast.audio
+-- Exclusive Radio Soft Rock --
+Alanis Morissette,https://streaming.exclusive.radio/er-app/alanismorissette/icecast.audio
+America,https://streaming.exclusive.radio/er-app/america/icecast.audio
+Billy Idol,https://streaming.exclusive.radio/er-app/billyidol/icecast.audio
+Bob Seger,https://streaming.exclusive.radio/er-app/bobseger/icecast.audio
+Boston,https://streaming.exclusive.radio/er-app/boston/icecast.audio
+Bruce Springsteen,https://streaming.exclusive.radio/er-app/springsteen/icecast.audio
+Bryan Adams,https://streaming.exclusive.radio/er-app/bryanadams/icecast.audio
+Chicago,https://streaming.exclusive.radio/er-app/chicago/icecast.audio
+Chris Rea,https://streaming.exclusive.radio/er-app/chrisrea/icecast.audio
+Creedence Clearwater Revival,https://streaming.exclusive.radio/er-app/creedence/icecast.audio
+Crosby Stills Nash and Young,https://streaming.exclusive.radio/er-app/csny/icecast.audio
+David Bowie,https://streaming.exclusive.radio/er-app/davidbowie/icecast.audio
+Dire Straits,https://streaming.exclusive.radio/er-app/direstraits/icecast.audio
+Eagles,https://streaming.exclusive.radio/er-app/eagles/icecast.audio
+Emerson  Lake  and  Palmer,https://streaming.exclusive.radio/er-app/emersonlakepalmer/icecast.audio
+Fleetwood Mac,https://streaming.exclusive.radio/er-app/fleetwoodmac/icecast.audio
+Foreigner,https://streaming.exclusive.radio/er-app/foreigner/icecast.audio
+Genesis,https://streaming.exclusive.radio/er-app/genesis/icecast.audio
+Gram Parsons,https://streaming.exclusive.radio/er-app/gramparsons/icecast.audio
+Grateful Dead,https://streaming.exclusive.radio/er-app/gratefuldead/icecast.audio
+Huey Lewis  and  The News,https://streaming.exclusive.radio/er-app/hueylewis/icecast.audio
+INXS,https://streaming.exclusive.radio/er-app/INXS/icecast.audio
+Jefferson Airplane,https://streaming.exclusive.radio/er-app/jeffersonairplane/icecast.audio
+Journey,https://streaming.exclusive.radio/er-app/journey/icecast.audio
+Little Feat,https://streaming.exclusive.radio/er-app/littlefeat/icecast.audio
+Meat Loaf,https://streaming.exclusive.radio/er-app/meatloaf/icecast.audio
+Mike And The Mechanics,https://streaming.exclusive.radio/er-app/mikeandthemechanics/icecast.audio
+Neil Young,https://streaming.exclusive.radio/er-app/neilyoung/icecast.audio
+Patti Smith,https://streaming.exclusive.radio/er-app/pattismith/icecast.audio
+Paul Weller,https://streaming.exclusive.radio/er-app/paulweller/icecast.audio
+Peter Frampton,https://streaming.exclusive.radio/er-app/peterframpton/icecast.audio
+R.E.M.,https://streaming.exclusive.radio/er-app/rem/icecast.audio
+Robert Palmer,https://streaming.exclusive.radio/er-app/robertpalmer/icecast.audio
+Santana,https://streaming.exclusive.radio/er-app/santana/icecast.audio
+Sheryl Crow,https://streaming.exclusive.radio/er-app/sherylcrow/icecast.audio
+Steely Dan,https://streaming.exclusive.radio/er-app/steelydan/icecast.audio
+Steve Winwood,https://streaming.exclusive.radio/er-app/stevewinwood/icecast.audio
+Supertramp,https://streaming.exclusive.radio/er-app/supertramp/icecast.audio
+The Allman Brothers Band,https://streaming.exclusive.radio/er-app/allmanbrothers/icecast.audio
+The Band,https://streaming.exclusive.radio/er-app/theband/icecast.audio
+The Doobie Brothers,https://streaming.exclusive.radio/er-app/doobiebrothers/icecast.audio
+The Doors,https://streaming.exclusive.radio/er-app/doors/icecast.audio
+The Moody Blues,https://streaming.exclusive.radio/er-app/moodyblues/icecast.audio
+The Steve Miller Band,https://streaming.exclusive.radio/er-app/stevemillerband/icecast.audio
+The Velvet Underground,https://streaming.exclusive.radio/er-app/velvetunderground/icecast.audio
+The White Stripes,https://streaming.exclusive.radio/er-app/whitestripes/icecast.audio
+Toto,https://streaming.exclusive.radio/er-app/toto/icecast.audio
+Yes,https://streaming.exclusive.radio/er-app/yes/icecast.audio
+-- Exclusive Radio Blues --
+Albert Collins,https://streaming.exclusive.radio/er-app/albertcollins/icecast.audio
+B.B. King,https://streaming.exclusive.radio/er-app/bbking/icecast.audio
+Bo Diddley,https://streaming.exclusive.radio/er-app/bodiddley/icecast.audio
+Buddy Guy,https://streaming.exclusive.radio/er-app/buddyguy/icecast.audio
+Derek Trucks and Susan Tedeschi,https://streaming.exclusive.radio/er-app/derekandsusantrucks/icecast.audio
+Etta James,https://streaming.exclusive.radio/er-app/ettajames/icecast.audio
+Howlin Wolf,https://streaming.exclusive.radio/er-app/howlinwolf/icecast.audio
+J J Cale,https://streaming.exclusive.radio/er-app/jjcale/icecast.audio
+Jimmy Rogers,https://streaming.exclusive.radio/er-app/jimmyrogers/icecast.audio
+Joe Bonamassa,https://streaming.exclusive.radio/er-app/joebonamassa/icecast.audio
+John Lee Hooker,https://streaming.exclusive.radio/er-app/johnleehooker/icecast.audio
+John Mayall,https://streaming.exclusive.radio/er-app/johnmayall/icecast.audio
+Muddy Waters,https://streaming.exclusive.radio/er-app/muddywaters/icecast.audio
+Peter Green's Fleetwood Mac,https://streaming.exclusive.radio/er-app/pgfleetwood/icecast.audio
+Robert Cray,https://streaming.exclusive.radio/er-app/robertcray/icecast.audio
+Stevie Ray Vaughan,https://streaming.exclusive.radio/er-app/stevierayvaughan/icecast.audio
+The Yardbirds,https://streaming.exclusive.radio/er-app/theyardbirds/icecast.audio
+-- Exclusive Radio Easy --
+Andrea Bocelli,https://streaming.exclusive.radio/er-app/andreabocelli/icecast.audio
+Andy Williams,https://streaming.exclusive.radio/er-app/andywilliams/icecast.audio
+Barbra Streisand,https://streaming.exclusive.radio/er-app/streisand/icecast.audio
+Bette Midler,https://streaming.exclusive.radio/er-app/bettemidler/icecast.audio
+Bing Crosby,https://streaming.exclusive.radio/er-app/bingcrosby/icecast.audio
+Bread,https://streaming.exclusive.radio/er-app/bread/icecast.audio
+Carly Simon,https://streaming.exclusive.radio/er-app/carlysimon/icecast.audio
+Carole King,https://streaming.exclusive.radio/er-app/caroleking/icecast.audio
+Celine Dion,https://streaming.exclusive.radio/er-app/celinedion/icecast.audio
+David Soul,https://streaming.exclusive.radio/er-app/davidsoul/icecast.audio
+Dean Martin,https://streaming.exclusive.radio/er-app/deanmartin/icecast.audio
+Dionne Warwick,https://streaming.exclusive.radio/er-app/dionnewarwick/icecast.audio
+Dr Hook,https://streaming.exclusive.radio/er-app/drhook/icecast.audio
+Ella Fitzgerald,https://streaming.exclusive.radio/er-app/ellafitzgerald/icecast.audio
+Engelbert Humperdinck,https://streaming.exclusive.radio/er-app/engelberthumperdinck/icecast.audio
+Jack Johnson,https://streaming.exclusive.radio/er-app/jackjohnson/icecast.audio
+Johnny Mathis,https://streaming.exclusive.radio/er-app/johnnymathis/icecast.audio
+Josh Groban,https://streaming.exclusive.radio/er-app/joshgroban/icecast.audio
+Kenny G,https://streaming.exclusive.radio/er-app/kennyg/icecast.audio
+Matt Monro,https://streaming.exclusive.radio/er-app/mattmonro/icecast.audio
+Michael Bolton,https://streaming.exclusive.radio/er-app/michaelbolton/icecast.audio
+Nat King Cole,https://streaming.exclusive.radio/er-app/natkingcole/icecast.audio
+Neil Diamond,https://streaming.exclusive.radio/er-app/neildiamond/icecast.audio
+Perry Como,https://streaming.exclusive.radio/er-app/perrycomo/icecast.audio
+Sade,https://streaming.exclusive.radio/er-app/sade/icecast.audio
+The Carpenters,https://streaming.exclusive.radio/er-app/carpenters/icecast.audio
+-- Exclusive Radio Classical --
+Beethoven,https://streaming.exclusive.radio/er-app/beethoven/icecast.audio
+Brahms,https://streaming.exclusive.radio/er-app/brahms/icecast.audio
+Chopin,https://streaming.exclusive.radio/er-app/chopin/icecast.audio
+Debussy,https://streaming.exclusive.radio/er-app/debussy/icecast.audio
+Handel,https://streaming.exclusive.radio/er-app/handel/icecast.audio
+J.S. Bach,https://streaming.exclusive.radio/er-app/jsbach/icecast.audio
+John Williams,https://streaming.exclusive.radio/er-app/johnwilliams/icecast.audio
+Liszt,https://streaming.exclusive.radio/er-app/liszt/icecast.audio
+Mozart,https://streaming.exclusive.radio/er-app/mozart/icecast.audio
+Ralph Vaughan Williams,https://streaming.exclusive.radio/er-app/ralphvaughanwilliams/icecast.audio
+Ravel,https://streaming.exclusive.radio/er-app/ravel/icecast.audio
+Schubert,https://streaming.exclusive.radio/er-app/schubert/icecast.audio
+Shostakovich,https://streaming.exclusive.radio/er-app/shostakovich/icecast.audio
+Sibelius,https://streaming.exclusive.radio/er-app/sibelius/icecast.audio
+Sleep-Classical,https://streaming.exclusive.radio/er-app/sleep-classical/icecast.audio
+Strauss,https://streaming.exclusive.radio/er-app/strauss/icecast.audio
+Stravinsky,https://streaming.exclusive.radio/er-app/stravinsky/icecast.audio
+Tchaikovsky,https://streaming.exclusive.radio/er-app/tchaikovsky/icecast.audio
+Verdi,https://streaming.exclusive.radio/er-app/verdi/icecast.audio
+Vivaldi,https://streaming.exclusive.radio/er-app/vivaldi/icecast.audio
+-- Exclusive Radio All Stations --
+BGT Radio,https://streaming.exclusive.radio/er-app/bgt/icecast.audio
+-- Exclusive Radio Calm --
+Birdsong,https://streaming.exclusive.radio/er-app/birdsong/icecast.audio
+Bowls,https://streaming.exclusive.radio/er-app/bowls/icecast.audio
+Chants,https://streaming.exclusive.radio/er-app/chants/icecast.audio
+Gongs,https://streaming.exclusive.radio/er-app/gongs/icecast.audio
+Massage,https://streaming.exclusive.radio/er-app/massage/icecast.audio
+Ocean,https://streaming.exclusive.radio/er-app/ocean/icecast.audio
+Pan Pipes,https://streaming.exclusive.radio/er-app/panpipes/icecast.audio
+Reiki,https://streaming.exclusive.radio/er-app/reiki/icecast.audio
+Tai Chi,https://streaming.exclusive.radio/er-app/taichi/icecast.audio
+Zen,https://streaming.exclusive.radio/er-app/zen/icecast.audio
+-- Exclusive Radio World --
+Brazil,https://streaming.exclusive.radio/er-app/brazil/icecast.audio
+Deutsche Musik,https://streaming.exclusive.radio/er-app/deutschemusik/icecast.audio
+Italy,https://streaming.exclusive.radio/er-app/italy/icecast.audio
+J-Pop,https://streaming.exclusive.radio/er-app/jpop/icecast.audio
+K-Pop,https://streaming.exclusive.radio/er-app/kpop/icecast.audio
+Musique Francaise,https://streaming.exclusive.radio/er-app/musiquefrancaise/icecast.audio
+New Zealand,https://streaming.exclusive.radio/er-app/nzmusic/icecast.audio
+-- Exclusive Radio Dance --
+Club,https://streaming.exclusive.radio/er-app/club/icecast.audio
+Disco,https://streaming.exclusive.radio/er-app/disco/icecast.audio
+Ibiza,https://streaming.exclusive.radio/er-app/ibiza/icecast.audio
+Ministry of Sound,https://streaming.exclusive.radio/er-app/ministryofsound/icecast.audio
+Party Anthems,https://streaming.exclusive.radio/er-app/partyanthems/icecast.audio
+Rave,https://streaming.exclusive.radio/er-app/rave/icecast.audio
 -- Exclusive Radio Wellness --
-Birdsong,http://streaming.exclusive.radio/er/birdsong/icecast.audio
-Bowls,http://streaming.exclusive.radio/er/bowls/icecast.audio
-Chants,http://streaming.exclusive.radio/er/chants/icecast.audio
-Gongs,http://streaming.exclusive.radio/er/gongs/icecast.audio
-Massage,http://streaming.exclusive.radio/er/massage/icecast.audio
-Ocean,http://streaming.exclusive.radio/er/ocean/icecast.audio
-Pan Pipes,http://streaming.exclusive.radio/er/panpipes/icecast.audio
-Reiki,http://streaming.exclusive.radio/er/reiki/icecast.audio
-Tai Chi,http://streaming.exclusive.radio/er/taichi/icecast.audio
-Zen,http://streaming.exclusive.radio/er/zen/icecast.audio
--- Exclusive Radio Energy Workout --
-Energy Workout,http://streaming.exclusive.radio/er/energyworkout/icecast.audio
-Meditation,http://streaming.exclusive.radio/er/meditation/icecast.audio
-Motivation,http://streaming.exclusive.radio/er/motivation/icecast.audio
-Pilates,http://streaming.exclusive.radio/er/pilates/icecast.audio
-Relaxing Workout,http://streaming.exclusive.radio/er/relaxingworkout/icecast.audio
-Running,http://streaming.exclusive.radio/er/running/icecast.audio
-Sleep- Max Richter,http://streaming.exclusive.radio/er/sleep-maxrichter/icecast.audio
-Sleep-Baby,http://streaming.exclusive.radio/er/sleepbaby/icecast.audio
-Sleep-Classical,http://streaming.exclusive.radio/er/sleep-classical/icecast.audio
-Sleep-Kids,http://streaming.exclusive.radio/er/sleep-kids/icecast.audio
-Sleep-Relax,http://streaming.exclusive.radio/er/sleep-relax/icecast.audio
-Sleep-Tones,http://streaming.exclusive.radio/er/sleep-tones/icecast.audio
-Successful,http://streaming.exclusive.radio/er/succesful/icecast.audio
-ViBE,http://streaming.exclusive.radio/er/vibe/icecast.audio
+Energy Workout,https://streaming.exclusive.radio/er-app/energyworkout/icecast.audio
+Meditation,https://streaming.exclusive.radio/er-app/meditation/icecast.audio
+Motivation,https://streaming.exclusive.radio/er-app/motivation/icecast.audio
+Pilates,https://streaming.exclusive.radio/er-app/pilates/icecast.audio
+Relaxing Workout,https://streaming.exclusive.radio/er-app/relaxingworkout/icecast.audio
+Running,https://streaming.exclusive.radio/er-app/running/icecast.audio
+Sleep- Max Richter,https://streaming.exclusive.radio/er-app/sleep-maxrichter/icecast.audio
+Sleep-Baby,https://streaming.exclusive.radio/er-app/sleepbaby/icecast.audio
+Sleep-Kids,https://streaming.exclusive.radio/er-app/sleep-kids/icecast.audio
+Sleep-Relax,https://streaming.exclusive.radio/er-app/sleep-relax/icecast.audio
+Sleep-Tones,https://streaming.exclusive.radio/er-app/sleep-tones/icecast.audio
+Successful,https://streaming.exclusive.radio/er-app/succesful/icecast.audio
+ViBE,https://streaming.exclusive.radio/er-app/vibe/icecast.audio
 """
