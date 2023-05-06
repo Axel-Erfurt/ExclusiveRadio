@@ -1,12 +1,19 @@
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-
+
 import gi
 gi.require_version("Gtk", "3.0")
 gi.require_version("Gst", "1.0")
 gi.require_version('Gdk', '3.0')
 gi.require_version('Notify', '0.7')
-gi.require_version('AppIndicator3', '0.1')
-from gi.repository import Gtk, Gdk, Gst, Notify, AppIndicator3 as tray
+from gi.repository import Gtk, Gdk, Gst, Notify
+try:
+    gi.require_version('AppIndicator3', '0.1')
+    from gi.repository import AppIndicator3 as tray
+except:
+    gi.require_version('AyatanaAppIndicator3', '0.1')
+    from gi.repository import AyatanaAppIndicator3 as tray
+
 import warnings
 
 from gi.repository import GLib
@@ -118,6 +125,19 @@ class RadioPlayer(Gtk.Window):
         self.action_stop.set_image(img)
         self.action_stop.connect("activate", self.stopPlayer)
         self.tray_menu.append(self.action_stop)
+        
+        sep = Gtk.SeparatorMenuItem()
+        self.tray_menu.append(sep)
+        
+        img = Gtk.Image()
+        img.set_from_icon_name("application-exit", 20)
+        self.action_filequit = Gtk.ImageMenuItem.new_with_label("Quit")
+        self.action_filequit.set_image(img)
+        self.action_filequit.connect("activate", self.handleClose)
+        self.tray_menu.append(self.action_filequit)
+        
+        sep_menu = Gtk.SeparatorMenuItem()
+        self.tray_menu.append(sep_menu)
 
         b = self.chlist
         i = 0
@@ -147,16 +167,6 @@ class RadioPlayer(Gtk.Window):
                     self.sub1.set_submenu(self.submenu1)
                     i += 1
                     break
-            
-        sep = Gtk.SeparatorMenuItem()
-        self.tray_menu.append(sep)
-        
-        img = Gtk.Image()
-        img.set_from_icon_name("application-exit", 20)
-        self.action_filequit = Gtk.ImageMenuItem.new_with_label("Quit")
-        self.action_filequit.set_image(img)
-        self.action_filequit.connect("activate", self.handleClose)
-        self.tray_menu.append(self.action_filequit)
         
         self.tray_menu.show_all()
         return self.tray_menu
