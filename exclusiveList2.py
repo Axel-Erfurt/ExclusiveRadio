@@ -122,7 +122,7 @@ Easy Country,https://drive.uber.radio/uber-app/cmreasycountry/icecast.audio
 Irish Country,https://drive.uber.radio/uber-app/cmririshcountry/icecast.audio
 Todays Country Boys,https://drive.uber.radio/uber-app/cmrtodayscountryboys/icecast.audio
 Todays Country Girls,https://drive.uber.radio/uber-app/cmrtodayscountrygirls/icecast.audio
-Country Love.https://drive.uber.radio/uber-app/cmrcountrylove/icecast.audio
+Country Love,https://drive.uber.radio/uber-app/cmrcountrylove/icecast.audio
 -- Country Music Radio Artists --
 Alabama,https://drive.uber.radio/uber-app/cmralabama/icecast.audio
 Brooks & Dunn,https://drive.uber.radio/uber-app/cmrbrooksanddunn/icecast.audio
